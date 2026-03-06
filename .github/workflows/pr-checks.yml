@@ -1,0 +1,27 @@
+name: PR Checks
+
+on:
+  pull_request:
+    branches:
+      - main
+  merge_group:
+    types:
+      - checks_requested
+
+permissions: {}
+
+jobs:
+  pr-checks:
+    permissions:
+      contents: read
+      actions: write
+      pull-requests: write
+      checks: write
+    uses: McTalian-WoW-Addons/wow-build-tools/.github/workflows/pr-checks.yml@v1-beta
+    with:
+      addon-name: TokenTransmogTooltips
+      rockspec-name: tokentransmogtooltips-1-1.rockspec
+      lua-version: 5.4.4
+      i18n-enabled: false
+      trunk-enabled: false
+    secrets: inherit

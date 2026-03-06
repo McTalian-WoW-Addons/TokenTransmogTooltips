@@ -43,7 +43,7 @@ It _should_ work with tokens from the following sources:
   - Tier 5 Raids: Serpent Shrine Cavern, The Eye/Tempest Keep
   - Tier 4 Raids: Karazhan, Gruul's Lair, Magtheridon's Lair
 
-**This data is manually maintained**, so it may not be complete or accurate. If you find a token that is not supported, please open an issue on the [GitHub repository](https://github.com/mctalian/TokenTransmogTooltips/issues).
+**This data is manually maintained**, so it may not be complete or accurate. If you find a token that is not supported, please open an issue on the [GitHub repository](https://github.com/McTalian-WoW-Addons/TokenTransmogTooltips/issues).
 
 ## Recommended addon(s)
 
@@ -52,7 +52,7 @@ It _should_ work with tokens from the following sources:
 
 ## This doesn't work for this token I just looted!
 
-There isn't a Blizzard API for this type of data, so I have manually added lookup tables for all the tokens I could find. If you find a token that is not supported (or is incorrect), please open an issue on the [GitHub repository](https://github.com/mctalian/TokenTransmogTooltips/issues), or let me know somehow. Include the token's itemID, the itemContext (should be on the tooltip for now), and which raid it comes from. You can also open the Appearance Journal in-game and find the items that should be associated with that token and provide the appearanceID and modID for those items (this addon adds that data to the tooltips in the Appearance Journal as well).
+There isn't a Blizzard API for this type of data, so I have manually added lookup tables for all the tokens I could find. If you find a token that is not supported (or is incorrect), please open an issue on the [GitHub repository](https://github.com/McTalian-WoW-Addons/TokenTransmogTooltips/issues), or let me know somehow. Include the token's itemID, the itemContext (should be on the tooltip for now), and which raid it comes from. You can also open the Appearance Journal in-game and find the items that should be associated with that token and provide the appearanceID and modID for those items (this addon adds that data to the tooltips in the Appearance Journal as well).
 
 The addon should be up to date with the latest raids and now also supports some open world token sources (Benthic, Black Empire). I will try to look into adding more non-raid tokens as well. Please let me know if there are raid tokens missing, or if there are particular tokens you would like to see added 🙏
 

@@ -1,0 +1,27 @@
+name: Update TOC Interface version(s)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 12 * * *
+
+permissions: {}
+
+jobs:
+  toc-update:
+    permissions:
+      contents: write
+      pull-requests: write
+    uses: McTalian-WoW-Addons/wow-build-tools/.github/workflows/toc-updater.yml@v1-beta
+    with:
+      addon-name: TokenTransmogTooltips
+      pr-body: |
+        ## Requirements
+
+        - [ ] Download test package in the comments below
+        - [ ] Test for all applicable game clients
+          - [ ] Retail (Live? PTR? Beta?)
+
+        ----------------------------------------------------
+        _This PR was automatically created to update the supported interface versions in TokenTransmogTooltips.toc._
+    secrets: inherit

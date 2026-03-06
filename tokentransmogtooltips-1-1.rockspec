@@ -1,7 +1,7 @@
 package = "tokentransmogtooltips"
 version = "1-1"
 source = {
-  url = "git+https://github.com/McTalian/TokenTransmogTooltips.git"
+  url = "git+https://github.com/McTalian-WoW-Addons/TokenTransmogTooltips.git"
 }
 dependencies = {
   "lua >= 5.3",

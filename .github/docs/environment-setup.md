@@ -77,7 +77,7 @@ The wow-ui-source documentation includes files referencing deprecated APIs (usua
 
 ### wow-build-tools
 
-This project uses [`McTalian/wow-build-tools`](https://github.com/McTalian/wow-build-tools) for building and packaging the addon.
+This project uses [`McTalian-WoW-Addons/wow-build-tools`](https://github.com/McTalian-WoW-Addons/wow-build-tools) for building and packaging the addon.
 
 **Repository Location**: `../wow-build-tools` (one directory up from this project)
 
