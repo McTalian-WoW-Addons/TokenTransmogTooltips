@@ -22,7 +22,7 @@
 
 For documentation purposes here is the Weapon token, it will be handled later as there is a lot of manual work to do.
 
-```
+```text
 -- Weapon has the same token for all classes, but generates a random class-appropriate weapon
 [203650] - Primalist Weapon - WEAPON - The Forbidden Reach
 ```
@@ -35,7 +35,7 @@ Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Na
 
 **Extract Tokens Output**:
 
-```
+```text
 -- Manual data entry
 -- Format: [ITEMID] - Token Name - SLOT - "Appearance Tier/Source"
 
@@ -86,7 +86,7 @@ Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Na
 
 With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. A modal will appear where you provide a "label" (usually corresponds to the raid name, cross-reference with one of the class sets in the Transmog Sets UI). After entering the label, select which gear slots have tokens and click "Generate Data". Copy the output and paste the output below:
 
-```
+```text
 === Data for 'Primal Elements' ===
 
 ## TEMPLATE
@@ -445,7 +445,7 @@ Mapping of token IDs to their difficulties and token groups:
 
 ### Appearance Data by Token Group, Class, Difficulty, Slot
 
-```
+```text
 ### CLOTH - PRIEST - THE_FORBIDDEN_REACH
 HELM, 77272, 185704
 SHOULDERS, 77273, 185706

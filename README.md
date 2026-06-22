@@ -50,7 +50,7 @@ It _should_ work with tokens from the following sources:
 - `Vendor` to set up auto sell/destroy rules
 - Any addon that shows item IDs if you're looking to contribute token data. Alpha builds of TokenTransmogTooltips offer itemIds as well as itemContexts for items. If you would find that useful in a release build, please let me know and I can add a few configuration options to this addon.
 
-## This doesn't work for this token I just looted!
+## This doesn't work for this token I just looted
 
 There isn't a Blizzard API for this type of data, so I have manually added lookup tables for all the tokens I could find. If you find a token that is not supported (or is incorrect), please open an issue on the [GitHub repository](https://github.com/McTalian-WoW-Addons/TokenTransmogTooltips/issues), or let me know somehow. Include the token's itemID, the itemContext (should be on the tooltip for now), and which raid it comes from. You can also open the Appearance Journal in-game and find the items that should be associated with that token and provide the appearanceID and modID for those items (this addon adds that data to the tooltips in the Appearance Journal as well).
 

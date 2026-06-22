@@ -25,7 +25,7 @@ Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Na
 
 **Extract Tokens Output**:
 
-```
+```text
 -- Extracted Token Data (Difficulty: RAID_FINDER) --
 -- Format: [ITEMID] - Token Name - SLOT - DIFFICULTY(ItemCreationContext) -- [Classes]
 
@@ -190,7 +190,7 @@ Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Na
 
 With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. A modal will appear where you provide a "label" (usually corresponds to the raid name, cross-reference with one of the class sets in the Transmog Sets UI). After entering the label, select which gear slots have tokens and click "Generate Data". Copy the output and paste the output below:
 
-```
+```text
 === Data for 'The Voidspire' ===
 
 ## TEMPLATE
@@ -1059,7 +1059,7 @@ Mapping of token IDs to their difficulties and token groups:
 
 ### Appearance Data by Token Group, Class, Difficulty, Slot
 
-```
+```text
 ### _woven - PRIEST - RAID_FINDER
 HELM, 126918, 297631
 SHOULDERS, 126919, 297607

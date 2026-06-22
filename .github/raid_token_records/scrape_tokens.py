@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-scrape_tokens.py — Token Discovery & Contained-Item Scraper for TokenTransmogTooltips
+scrape_tokens.py — Token Discovery & Contained-Item Scraper for TokenTransmogTooltips.
 
 PURPOSE:
   Automates the two most tedious manual steps for non-raid token sources:
@@ -374,6 +374,7 @@ def discover_tokens_from_url(url, name_filter=None):
 
     Returns:
         List of dicts with keys: id, name, slotbak, armor_subclass, quality
+
     """
     html = fetch_url(url)
     if not html:
@@ -419,6 +420,7 @@ def discover_tokens_from_category(category, name_filter=None):
 
     Returns:
         List of dicts (same as discover_tokens_from_url).
+
     """
     # Wowhead category URLs follow the pattern /items/{category-slug}
     # Common categories for tokens: "junk" (class 15), "miscellaneous",
@@ -450,6 +452,7 @@ def fetch_contains(item_id):
     Returns:
         List of dicts with keys: id, name, slot, slotbak, appearances, specs
         None if no contains data found.
+
     """
     url = f"https://www.wowhead.com/item={item_id}"
     html = fetch_url(url)
@@ -485,6 +488,7 @@ def fetch_contains_for_file(input_path, output_path):
     Args:
         input_path: Path to input JSONC file with token metadata.
         output_path: Path to write output JSONC with contains data added.
+
     """
     data = read_jsonc(input_path)
     item_ids = list(data.keys())
@@ -500,7 +504,7 @@ def fetch_contains_for_file(input_path, output_path):
             data[item_id]["contains"] = contains
             print(f"  Found {len(contains)} contained items")
         else:
-            print(f"  No contains data found")
+            print("  No contains data found")
 
         if idx < total:
             time.sleep(REQUEST_DELAY)
@@ -654,7 +658,7 @@ def cmd_pipeline(args):
             result[str(token_id)]["contains"] = contains
             print(f"  Found {len(contains)} contained items", file=sys.stderr)
         else:
-            print(f"  No contains data found", file=sys.stderr)
+            print("  No contains data found", file=sys.stderr)
 
         if idx < total:
             time.sleep(REQUEST_DELAY)

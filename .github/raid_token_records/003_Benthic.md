@@ -25,7 +25,7 @@ Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Na
 
 **Extract Tokens Output**:
 
-```
+```text
 -- Manual data entry (sourced from Wowhead)
 -- Format: [ITEMID] - Token Name - SLOT - Source
 -- Note: No difficulties or item creation contexts. Each token is used by all classes but generates class-specific items.
@@ -47,7 +47,7 @@ Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Na
 
 With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. A modal will appear where you provide a "label" (usually corresponds to the raid name, cross-reference with one of the class sets in the Transmog Sets UI). After entering the label, select which gear slots have tokens and click "Generate Data". Copy the output and paste the output below:
 
-```
+```text
 ### CLOTH
   HELM, 40596, { 104104 }
   SHOULDERS, 40604, { 104106 }
@@ -133,7 +133,7 @@ Mapping of token IDs to their difficulties and token groups:
 
 ### Appearance Data by Token Group, Class, Difficulty, Slot
 
-```
+```text
 ### CLOTH - PRIEST - NAZJATAR
 HELM, 40596, { 104104 }
 SHOULDERS, 40604, { 104106 }
