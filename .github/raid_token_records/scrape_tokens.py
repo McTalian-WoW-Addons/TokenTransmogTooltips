@@ -73,7 +73,6 @@ import subprocess
 import sys
 import time
 
-
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
@@ -102,43 +101,68 @@ WOWHEAD_ARMOR_CLASS_MAP = {
 # Used to infer armor type from the "specs" list on contained items
 SPEC_TO_ARMOR_TYPE = {
     # Warrior (Plate)
-    71: "PLATE", 72: "PLATE", 73: "PLATE",
+    71: "PLATE",
+    72: "PLATE",
+    73: "PLATE",
     # Paladin (Plate)
-    65: "PLATE", 66: "PLATE", 70: "PLATE",
+    65: "PLATE",
+    66: "PLATE",
+    70: "PLATE",
     # Death Knight (Plate)
-    250: "PLATE", 251: "PLATE", 252: "PLATE",
+    250: "PLATE",
+    251: "PLATE",
+    252: "PLATE",
     # Hunter (Mail)
-    253: "MAIL", 254: "MAIL", 255: "MAIL",
+    253: "MAIL",
+    254: "MAIL",
+    255: "MAIL",
     # Shaman (Mail)
-    262: "MAIL", 263: "MAIL", 264: "MAIL",
+    262: "MAIL",
+    263: "MAIL",
+    264: "MAIL",
     # Evoker (Mail)
-    1467: "MAIL", 1468: "MAIL", 1473: "MAIL",
+    1467: "MAIL",
+    1468: "MAIL",
+    1473: "MAIL",
     # Rogue (Leather)
-    259: "LEATHER", 260: "LEATHER", 261: "LEATHER",
+    259: "LEATHER",
+    260: "LEATHER",
+    261: "LEATHER",
     # Monk (Leather)
-    268: "LEATHER", 269: "LEATHER", 270: "LEATHER",
+    268: "LEATHER",
+    269: "LEATHER",
+    270: "LEATHER",
     # Druid (Leather)
-    102: "LEATHER", 103: "LEATHER", 104: "LEATHER", 105: "LEATHER",
+    102: "LEATHER",
+    103: "LEATHER",
+    104: "LEATHER",
+    105: "LEATHER",
     # Demon Hunter (Leather)
-    577: "LEATHER", 581: "LEATHER",
+    577: "LEATHER",
+    581: "LEATHER",
     # Mage (Cloth)
-    62: "CLOTH", 63: "CLOTH", 64: "CLOTH",
+    62: "CLOTH",
+    63: "CLOTH",
+    64: "CLOTH",
     # Priest (Cloth)
-    256: "CLOTH", 257: "CLOTH", 258: "CLOTH",
+    256: "CLOTH",
+    257: "CLOTH",
+    258: "CLOTH",
     # Warlock (Cloth)
-    265: "CLOTH", 266: "CLOTH", 267: "CLOTH",
+    265: "CLOTH",
+    266: "CLOTH",
+    267: "CLOTH",
 }
 
 REQUEST_DELAY = 1.5  # seconds between requests
 
-USER_AGENT = (
-    "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"
-)
+USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"
 
 
 # ---------------------------------------------------------------------------
 # HTTP fetching (curl-based, zero Python dependencies)
 # ---------------------------------------------------------------------------
+
 
 def fetch_url(url):
     """Fetch a URL using curl and return the response body as a string.
@@ -146,9 +170,13 @@ def fetch_url(url):
     Returns None if the request fails or returns an empty/very short response.
     """
     cmd = [
-        "curl", "-s", "-L",
-        "-H", f"User-Agent: {USER_AGENT}",
-        "-H", "Accept: text/html,application/xhtml+xml",
+        "curl",
+        "-s",
+        "-L",
+        "-H",
+        f"User-Agent: {USER_AGENT}",
+        "-H",
+        "Accept: text/html,application/xhtml+xml",
         url,
     ]
     try:
@@ -168,6 +196,7 @@ def fetch_url(url):
 # ---------------------------------------------------------------------------
 # Wowhead HTML parsing helpers
 # ---------------------------------------------------------------------------
+
 
 def _extract_json_array(html, start_pos):
     """Extract a JSON array starting at start_pos in html.
@@ -193,15 +222,13 @@ def _extract_json_array(html, start_pos):
     if depth != 0:
         return None
 
-    data_str = html[bracket_start:i + 1]
+    data_str = html[bracket_start : i + 1]
 
     try:
         return json.loads(data_str)
     except json.JSONDecodeError:
         # Fallback: try regex extraction for id/name pairs
-        items_raw = re.findall(
-            r'"id":(\d+).*?"name":"([^"]+)"', data_str
-        )
+        items_raw = re.findall(r'"id":(\d+).*?"name":"([^"]+)"', data_str)
         if items_raw:
             return [{"id": int(id_), "name": name} for id_, name in items_raw]
         return None
@@ -251,7 +278,7 @@ def extract_listview_data(html, listview_id=None):
     colon_pos = html.find(":", data_pos)
     if colon_pos == -1:
         return None
-    after_colon = html[colon_pos + 1:colon_pos + 100].lstrip()
+    after_colon = html[colon_pos + 1 : colon_pos + 100].lstrip()
 
     if after_colon.startswith("["):
         # Pattern 1: Inline data array
@@ -259,15 +286,13 @@ def extract_listview_data(html, listview_id=None):
     else:
         # Pattern 2: Variable reference (e.g. "data: listviewitems")
         # Extract the variable name
-        var_match = re.match(r'([a-zA-Z_][a-zA-Z0-9_]*)', after_colon)
+        var_match = re.match(r"([a-zA-Z_][a-zA-Z0-9_]*)", after_colon)
         if not var_match:
             return None
         var_name = var_match.group(1)
 
         # Find the variable declaration: "var <name> = [...]"
-        var_decl = re.search(
-            rf'var\s+{re.escape(var_name)}\s*=\s*', html
-        )
+        var_decl = re.search(rf"var\s+{re.escape(var_name)}\s*=\s*", html)
         if not var_decl:
             return None
 
@@ -310,6 +335,7 @@ def armor_type(subclass):
 # JSONC helpers
 # ---------------------------------------------------------------------------
 
+
 def strip_jsonc_comments(text):
     """Remove // and /* */ style comments from JSONC text."""
     text = re.sub(r"//.*?$", "", text, flags=re.MULTILINE)
@@ -334,6 +360,7 @@ def write_jsonc(filepath, data):
 # ---------------------------------------------------------------------------
 # Core operations
 # ---------------------------------------------------------------------------
+
 
 def discover_tokens_from_url(url, name_filter=None):
     """Scrape a Wowhead search/category page for token items.
@@ -369,13 +396,15 @@ def discover_tokens_from_url(url, name_filter=None):
         if name_filter and name_filter.lower() not in name.lower():
             continue
 
-        tokens.append({
-            "id": item.get("id"),
-            "name": name,
-            "slotbak": item.get("slotbak", item.get("slot", 0)),
-            "armor_subclass": item.get("subclass", 0),
-            "quality": item.get("quality", 0),
-        })
+        tokens.append(
+            {
+                "id": item.get("id"),
+                "name": name,
+                "slotbak": item.get("slotbak", item.get("slot", 0)),
+                "armor_subclass": item.get("subclass", 0),
+                "quality": item.get("quality", 0),
+            }
+        )
 
     print(f"Discovered {len(tokens)} tokens", file=sys.stderr)
     return tokens
@@ -437,13 +466,15 @@ def fetch_contains(item_id):
 
     contained = []
     for item in items:
-        contained.append({
-            "id": item.get("id"),
-            "name": item.get("name", item.get("displayName", "Unknown")),
-            "slot": item.get("slotbak"),
-            "appearances": item.get("appearances", {}),
-            "specs": item.get("specs", []),
-        })
+        contained.append(
+            {
+                "id": item.get("id"),
+                "name": item.get("name", item.get("displayName", "Unknown")),
+                "slot": item.get("slotbak"),
+                "appearances": item.get("appearances", {}),
+                "specs": item.get("specs", []),
+            }
+        )
 
     return contained
 
@@ -481,6 +512,7 @@ def fetch_contains_for_file(input_path, output_path):
 # ---------------------------------------------------------------------------
 # Output formatters
 # ---------------------------------------------------------------------------
+
 
 def format_record(tokens):
     """Format token list as raid_token_record Token Discovery output.
@@ -543,6 +575,7 @@ def format_tttgen_from_contains(tokens_with_contains):
 # CLI subcommands
 # ---------------------------------------------------------------------------
 
+
 def cmd_discover(args):
     """Handle the 'discover' subcommand."""
     if args.url:
@@ -584,9 +617,7 @@ def cmd_contains(args):
         output = args.output or args.input.replace(".jsonc", "_contains.jsonc")
         fetch_contains_for_file(args.input, output)
     else:
-        print(
-            "ERROR: --item-id or --input is required for contains", file=sys.stderr
-        )
+        print("ERROR: --item-id or --input is required for contains", file=sys.stderr)
         sys.exit(1)
 
 
@@ -600,12 +631,17 @@ def cmd_pipeline(args):
         sys.exit(1)
 
     # Step 2: Fetch contains data for each token
-    print(f"\nStep 2: Fetching contains data for {len(tokens)} tokens...", file=sys.stderr)
+    print(
+        f"\nStep 2: Fetching contains data for {len(tokens)} tokens...", file=sys.stderr
+    )
     result = {}
     total = len(tokens)
     for idx, token in enumerate(tokens, 1):
         token_id = token["id"]
-        print(f"[{idx}/{total}] Fetching contains for {token_id} ({token['name']})...", file=sys.stderr)
+        print(
+            f"[{idx}/{total}] Fetching contains for {token_id} ({token['name']})...",
+            file=sys.stderr,
+        )
 
         result[str(token_id)] = {
             "name_enus": token["name"],
@@ -634,12 +670,16 @@ def cmd_pipeline(args):
         print(format_tttgen_from_contains(result))
     elif args.format == "record":
         print(format_record(tokens))
-        print("\n# Contains data available in JSONC format (use --format jsonc)", file=sys.stderr)
+        print(
+            "\n# Contains data available in JSONC format (use --format jsonc)",
+            file=sys.stderr,
+        )
 
 
 # ---------------------------------------------------------------------------
 # Argument parser
 # ---------------------------------------------------------------------------
+
 
 def build_parser():
     """Build the argparse argument parser."""
@@ -746,6 +786,7 @@ Examples:
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+
 
 def main():
     parser = build_parser()

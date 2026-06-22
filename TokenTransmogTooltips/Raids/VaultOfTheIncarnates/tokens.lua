@@ -80,191 +80,191 @@ local MYTHIC_DREADFUL_GAUNTLETS = dreadfulGear["MYTHIC"]["GAUNTLETS"]
 local MYTHIC_DREADFUL_LEGGINGS = dreadfulGear["MYTHIC"]["LEGGINGS"]
 
 ns.Raids.VotI = {
-  --#region Mystic (Druid, Hunter, Mage)
-  --#region Shoulders
-  -- https://www.wowhead.com/item=196599/mystic-lapis-forgestone
-  [196599] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Chest
-  -- https://www.wowhead.com/item=196596/mystic-amethyst-forgestone
-  [196596] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=196597/mystic-garnet-forgestone
-  [196597] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=196598/mystic-jade-forgestone
-  [196598] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#endregion
+	--#region Mystic (Druid, Hunter, Mage)
+	--#region Shoulders
+	-- https://www.wowhead.com/item=196599/mystic-lapis-forgestone
+	[196599] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	-- https://www.wowhead.com/item=196596/mystic-amethyst-forgestone
+	[196596] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=196597/mystic-garnet-forgestone
+	[196597] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=196598/mystic-jade-forgestone
+	[196598] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Venerated (Paladin, Priest, Shaman)
-  --#region Shoulders
-  -- https://www.wowhead.com/item=196604/venerated-lapis-forgestone
-  [196604] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Chest
-  -- https://www.wowhead.com/item=196601/venerated-amethyst-forgestone
-  [196601] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=196602/venerated-garnet-forgestone
-  [196602] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=196603/venerated-jade-forgestone
-  [196603] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#endregion
- 
-  --#region Zenith (Evoker, Monk, Rogue, Warrior)
-  --#region Shoulders
-  -- https://www.wowhead.com/item=196594/zenith-lapis-forgestone
-  [196594] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Chest
-  -- https://www.wowhead.com/item=196591/zenith-amethyst-forgestone
-  [196591] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=196592/zenith-garnet-forgestone
-  [196592] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=196593/zenith-jade-forgestone
-  [196593] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#endregion
- 
-  --#region Dreadful (Death Knight, Demon Hunter, Warlock)
-  --#region Shoulders
-  -- https://www.wowhead.com/item=196589/dreadful-lapis-forgestone
-  [196589] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Chest
-  -- https://www.wowhead.com/item=196586/dreadful-amethyst-forgestone
-  [196586] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=196587/dreadful-garnet-forgestone
-  [196587] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=196588/dreadful-jade-forgestone
-  [196588] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#endregion
+	--#region Venerated (Paladin, Priest, Shaman)
+	--#region Shoulders
+	-- https://www.wowhead.com/item=196604/venerated-lapis-forgestone
+	[196604] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	-- https://www.wowhead.com/item=196601/venerated-amethyst-forgestone
+	[196601] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=196602/venerated-garnet-forgestone
+	[196602] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=196603/venerated-jade-forgestone
+	[196603] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#endregion
+
+	--#region Zenith (Evoker, Monk, Rogue, Warrior)
+	--#region Shoulders
+	-- https://www.wowhead.com/item=196594/zenith-lapis-forgestone
+	[196594] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	-- https://www.wowhead.com/item=196591/zenith-amethyst-forgestone
+	[196591] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=196592/zenith-garnet-forgestone
+	[196592] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=196593/zenith-jade-forgestone
+	[196593] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#endregion
+
+	--#region Dreadful (Death Knight, Demon Hunter, Warlock)
+	--#region Shoulders
+	-- https://www.wowhead.com/item=196589/dreadful-lapis-forgestone
+	[196589] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	-- https://www.wowhead.com/item=196586/dreadful-amethyst-forgestone
+	[196586] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=196587/dreadful-garnet-forgestone
+	[196587] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=196588/dreadful-jade-forgestone
+	[196588] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#endregion
 }

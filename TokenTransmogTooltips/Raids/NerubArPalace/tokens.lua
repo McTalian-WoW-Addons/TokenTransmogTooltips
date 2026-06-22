@@ -125,245 +125,245 @@ mergeTable(MYTHIC_ALL_GEAR, zenithGear["MYTHIC"]["ALL"])
 
 ns.Raids.NAP = {
 
-  -- https://www.wowhead.com/item=225634/web-wrapped-curio
-  [225634] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ALL_GEAR,
-    },
-  },
+	-- https://www.wowhead.com/item=225634/web-wrapped-curio
+	[225634] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ALL_GEAR,
+		},
+	},
 
-  --#region Dreadful (Death Knight, Demon Hunter, Warlock)
-  --#region Chest
-  -- https://www.wowhead.com/item=225614/dreadful-blasphemers-effigy
-  [225614] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_CHEST,
-    },
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=225622/dreadful-connivers-badge
-  [225622] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HEAD,
-    },
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=225626/dreadful-slayers-icon
-  [225626] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_LEGS,
-    },
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=225618/dreadful-stalwarts-emblem
-  [225618] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HANDS,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=225630/dreadful-obscenitys-idol
-  [225630] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Dreadful (Death Knight, Demon Hunter, Warlock)
+	--#region Chest
+	-- https://www.wowhead.com/item=225614/dreadful-blasphemers-effigy
+	[225614] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_CHEST,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=225622/dreadful-connivers-badge
+	[225622] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HEAD,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=225626/dreadful-slayers-icon
+	[225626] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_LEGS,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=225618/dreadful-stalwarts-emblem
+	[225618] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HANDS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=225630/dreadful-obscenitys-idol
+	[225630] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Mystic (Druid, Hunter, Mage)
-  --#region Chest
-  -- https://www.wowhead.com/item=225615/mystic-blasphemers-effigy
-  [225615] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_CHEST,
-    },
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=225623/mystic-connivers-badge
-  [225623] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HEAD,
-    },
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=225627/mystic-slayers-icon
-  [225627] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_LEGS,
-    },
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=225619/mystic-stalwarts-emblem
-  [225619] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HANDS,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=225631/mystic-obscenitys-idol
-  [225631] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Mystic (Druid, Hunter, Mage)
+	--#region Chest
+	-- https://www.wowhead.com/item=225615/mystic-blasphemers-effigy
+	[225615] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_CHEST,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=225623/mystic-connivers-badge
+	[225623] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HEAD,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=225627/mystic-slayers-icon
+	[225627] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_LEGS,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=225619/mystic-stalwarts-emblem
+	[225619] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HANDS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=225631/mystic-obscenitys-idol
+	[225631] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Venerated (Paladin, Priest, Shaman)
-  --#region Chest
-  -- https://www.wowhead.com/item=225616/venerated-blasphemers-effigy
-  [225616] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_CHEST,
-    },
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=225624/venerated-connivers-badge
-  [225624] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HEAD,
-    },
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=225628/venerated-slayers-icon
-  [225628] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_LEGS,
-    },
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=225620/venerated-stalwarts-emblem
-  [225620] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HANDS,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=225632/venerated-obscenitys-idol
-  [225632] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Venerated (Paladin, Priest, Shaman)
+	--#region Chest
+	-- https://www.wowhead.com/item=225616/venerated-blasphemers-effigy
+	[225616] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_CHEST,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=225624/venerated-connivers-badge
+	[225624] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HEAD,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=225628/venerated-slayers-icon
+	[225628] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_LEGS,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=225620/venerated-stalwarts-emblem
+	[225620] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HANDS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=225632/venerated-obscenitys-idol
+	[225632] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Zenith (Evoker, Monk, Rogue, Warrior)
-  --#region Chest
-  -- https://www.wowhead.com/item=225617/zenith-blasphemers-effigy
-  [225617] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_CHEST,
-    },
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=225625/zenith-connivers-badge
-  [225625] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HEAD,
-    },
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=225629/zenith-slayers-icon
-  [225629] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_LEGS,
-    },
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=225621/zenith-stalwarts-emblem
-  [225621] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HANDS,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=225633/zenith-obscenitys-idol
-  [225633] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Zenith (Evoker, Monk, Rogue, Warrior)
+	--#region Chest
+	-- https://www.wowhead.com/item=225617/zenith-blasphemers-effigy
+	[225617] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_CHEST,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=225625/zenith-connivers-badge
+	[225625] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HEAD,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=225629/zenith-slayers-icon
+	[225629] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_LEGS,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=225621/zenith-stalwarts-emblem
+	[225621] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HANDS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=225633/zenith-obscenitys-idol
+	[225633] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#endregion
 }

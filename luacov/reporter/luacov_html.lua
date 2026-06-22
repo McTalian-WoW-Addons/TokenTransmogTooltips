@@ -24,46 +24,46 @@ HtmlReporter.totalCoverageData = nil
 HtmlReporter.totalCoverageWriter = nil
 
 function HtmlReporter:new(_luacovConfigurationTable)
-  local object, errorMessage = ReporterBase.new(self, _luacovConfigurationTable)
-  if not object then
-    return nil, errorMessage
-  end
+	local object, errorMessage = ReporterBase.new(self, _luacovConfigurationTable)
+	if not object then
+		return nil, errorMessage
+	end
 
-  local configuration = Configuration(_luacovConfigurationTable)
-  object.totalCoverageData = Total(configuration:getProjectName())
-  object.totalCoverageWriter = Writer(configuration:getOutputDirectoryPath())
+	local configuration = Configuration(_luacovConfigurationTable)
+	object.totalCoverageData = Total(configuration:getProjectName())
+	object.totalCoverageWriter = Writer(configuration:getOutputDirectoryPath())
 
-  return object
+	return object
 end
 
 function HtmlReporter:on_start()
-  self.totalCoverageData:setStartTimestamp(os.time())
+	self.totalCoverageData:setStartTimestamp(os.time())
 end
 
 function HtmlReporter:on_empty_line(_filePath, _lineNumber, _line)
-  self.totalCoverageData:addEmptyLine(_filePath, _lineNumber, _line)
+	self.totalCoverageData:addEmptyLine(_filePath, _lineNumber, _line)
 end
 
 function HtmlReporter:on_mis_line(_filePath, _lineNumber, _line)
-  self.totalCoverageData:addMissedLine(_filePath, _lineNumber, _line)
+	self.totalCoverageData:addMissedLine(_filePath, _lineNumber, _line)
 end
 
 function HtmlReporter:on_hit_line(_filePath, _lineNumber, _line, _numberOfHits)
-  self.totalCoverageData:addHitLine(_filePath, _lineNumber, _line, _numberOfHits)
+	self.totalCoverageData:addHitLine(_filePath, _lineNumber, _line, _numberOfHits)
 end
 
 function HtmlReporter:on_end_file(_filePath, _numberOfHits, _numberOfMisses)
-  self.totalCoverageData:addFileHitMissStatistics(_filePath, _numberOfHits, _numberOfMisses)
+	self.totalCoverageData:addFileHitMissStatistics(_filePath, _numberOfHits, _numberOfMisses)
 end
 
 function HtmlReporter:on_end()
-  self.totalCoverageWriter:writeTotalCoverage(self.totalCoverageData)
+	self.totalCoverageWriter:writeTotalCoverage(self.totalCoverageData)
 end
 
 return {
-  HtmlReporter = HtmlReporter,
+	HtmlReporter = HtmlReporter,
 
-  report = function()
-    return reporter.report(HtmlReporter)
-  end,
+	report = function()
+		return reporter.report(HtmlReporter)
+	end,
 }

@@ -4,60 +4,60 @@ local mergeTable = ns.mergeTable
 
 ---@class TOCRogue
 ns._Gear.toc["ROGUE"] = {
-  ["ALLIANCE"] = {
-    ["CHEST"] = {
-      [11730] = {
-        23349,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [11936] = {
-        23352,
-      },
-    },
-    ["HELM"] = {
-      [11914] = {
-        23348,
-      },
-    },
-    ["LEGGINGS"] = {
-      [11716] = {
-        23350,
-      },
-    },
-    ["SHOULDERS"] = {
-      [11929] = {
-        23351,
-      },
-    },
-  },
-  ["HORDE"] = {
-    ["CHEST"] = {
-      [11813] = {
-        23373,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [11966] = {
-        23374,
-      },
-    },
-    ["HELM"] = {
-      [11913] = {
-        23375,
-      },
-    },
-    ["LEGGINGS"] = {
-      [11802] = {
-        23376,
-      },
-    },
-    ["SHOULDERS"] = {
-      [11930] = {
-        23377,
-      },
-    },
-  },
+	["ALLIANCE"] = {
+		["CHEST"] = {
+			[11730] = {
+				23349,
+			},
+		},
+		["GAUNTLETS"] = {
+			[11936] = {
+				23352,
+			},
+		},
+		["HELM"] = {
+			[11914] = {
+				23348,
+			},
+		},
+		["LEGGINGS"] = {
+			[11716] = {
+				23350,
+			},
+		},
+		["SHOULDERS"] = {
+			[11929] = {
+				23351,
+			},
+		},
+	},
+	["HORDE"] = {
+		["CHEST"] = {
+			[11813] = {
+				23373,
+			},
+		},
+		["GAUNTLETS"] = {
+			[11966] = {
+				23374,
+			},
+		},
+		["HELM"] = {
+			[11913] = {
+				23375,
+			},
+		},
+		["LEGGINGS"] = {
+			[11802] = {
+				23376,
+			},
+		},
+		["SHOULDERS"] = {
+			[11930] = {
+				23377,
+			},
+		},
+	},
 }
 
 -- Combine all Alliance rogue gear into a single table, only useful for raids that have

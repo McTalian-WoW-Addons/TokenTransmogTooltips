@@ -11,18 +11,18 @@ local shaman = ns._Gear.IcecrownCitadel["SHAMAN"]
 
 ---@class ICCProtector
 ns._Gear.IcecrownCitadel.Protector = {
-  ["NORMAL"] = {
-    ["ALL"] = {
-      ["HUNTER"] = hunter["NORMAL"]["ALL"],
-      ["WARRIOR"] = warrior["NORMAL"]["ALL"],
-      ["SHAMAN"] = shaman["NORMAL"]["ALL"],
-    },
-  },
-  ["HEROIC"] = {
-    ["ALL"] = {
-      ["HUNTER"] = hunter["HEROIC"]["ALL"],
-      ["WARRIOR"] = warrior["HEROIC"]["ALL"],
-      ["SHAMAN"] = shaman["HEROIC"]["ALL"],
-    },
-  },
+	["NORMAL"] = {
+		["ALL"] = {
+			["HUNTER"] = hunter["NORMAL"]["ALL"],
+			["WARRIOR"] = warrior["NORMAL"]["ALL"],
+			["SHAMAN"] = shaman["NORMAL"]["ALL"],
+		},
+	},
+	["HEROIC"] = {
+		["ALL"] = {
+			["HUNTER"] = hunter["HEROIC"]["ALL"],
+			["WARRIOR"] = warrior["HEROIC"]["ALL"],
+			["SHAMAN"] = shaman["HEROIC"]["ALL"],
+		},
+	},
 }

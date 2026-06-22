@@ -96,234 +96,234 @@ local MYTHIC_DREADFUL_GAUNTLETS = dreadfulGear["MYTHIC"]["GAUNTLETS"]
 local MYTHIC_DREADFUL_LEGGINGS = dreadfulGear["MYTHIC"]["LEGGINGS"]
 
 ns.Raids.SotFO = {
-  --#region Mystic (Druid, Hunter, Mage)
-  --#region Helm
-  -- https://www.wowhead.com/item=191002/mystic-helm-module
-  [191002] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HELM,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HELM,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HELM,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HELM,
-    }
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=191007/mystic-shoulder-module
-  [191007] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Chest
-  -- https://www.wowhead.com/item=191011/mystic-chest-module
-  [191011] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hand
-  -- https://www.wowhead.com/item=191015/mystic-hand-module
-  [191015] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=191019/mystic-leg-module
-  [191019] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#endregion
-  --#region Venerated (Paladin, Priest, Shaman)
-  --#region Helm
-  -- https://www.wowhead.com/item=191003/venerated-helm-module
-  [191003] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HELM,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HELM,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HELM,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HELM,
-    }
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=191008/venerated-shoulder-module
-  [191008] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Chest
-  -- https://www.wowhead.com/item=191012/venerated-chest-module
-  [191012] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hand
-  -- https://www.wowhead.com/item=191016/venerated-hand-module
-  [191016] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=191020/venerated-leg-module
-  [191020] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#endregion
- 
-  --#region Zenith (Monk, Rogue, Warrior)
-  --#region Helm
-  -- https://www.wowhead.com/item=191004/zenith-helm-module
-  [191004] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HELM,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HELM,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HELM,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HELM,
-    }
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=191009/zenith-shoulder-module
-  [191009] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Chest
-  -- https://www.wowhead.com/item=191013/zenith-chest-module
-  [191013] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hand
-  -- https://www.wowhead.com/item=191017/zenith-hand-module
-  [191017] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=191021/zenith-leg-module
-  [191021] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#endregion
- 
-  --#region Dreadful (Death Knight, Demon Hunter, Warlock)
-  --#region Helm
-  -- https://www.wowhead.com/item=191005/dreadful-helm-module
-  [191005] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HELM,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HELM,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HELM,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HELM,
-    }
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=191006/dreadful-shoulder-module
-  [191006] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Chest
-  -- https://www.wowhead.com/item=191010/dreadful-chest-module
-  [191010] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hand
-  -- https://www.wowhead.com/item=191014/dreadful-hand-module
-  [191014] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=191018/dreadful-leg-module
-  [191018] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#endregion
+	--#region Mystic (Druid, Hunter, Mage)
+	--#region Helm
+	-- https://www.wowhead.com/item=191002/mystic-helm-module
+	[191002] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HELM,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HELM,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HELM,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HELM,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=191007/mystic-shoulder-module
+	[191007] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	-- https://www.wowhead.com/item=191011/mystic-chest-module
+	[191011] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hand
+	-- https://www.wowhead.com/item=191015/mystic-hand-module
+	[191015] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=191019/mystic-leg-module
+	[191019] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#endregion
+	--#region Venerated (Paladin, Priest, Shaman)
+	--#region Helm
+	-- https://www.wowhead.com/item=191003/venerated-helm-module
+	[191003] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HELM,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HELM,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HELM,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HELM,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=191008/venerated-shoulder-module
+	[191008] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	-- https://www.wowhead.com/item=191012/venerated-chest-module
+	[191012] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hand
+	-- https://www.wowhead.com/item=191016/venerated-hand-module
+	[191016] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=191020/venerated-leg-module
+	[191020] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#endregion
+
+	--#region Zenith (Monk, Rogue, Warrior)
+	--#region Helm
+	-- https://www.wowhead.com/item=191004/zenith-helm-module
+	[191004] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HELM,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HELM,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HELM,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HELM,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=191009/zenith-shoulder-module
+	[191009] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	-- https://www.wowhead.com/item=191013/zenith-chest-module
+	[191013] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hand
+	-- https://www.wowhead.com/item=191017/zenith-hand-module
+	[191017] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=191021/zenith-leg-module
+	[191021] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#endregion
+
+	--#region Dreadful (Death Knight, Demon Hunter, Warlock)
+	--#region Helm
+	-- https://www.wowhead.com/item=191005/dreadful-helm-module
+	[191005] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HELM,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HELM,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HELM,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HELM,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=191006/dreadful-shoulder-module
+	[191006] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	-- https://www.wowhead.com/item=191010/dreadful-chest-module
+	[191010] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hand
+	-- https://www.wowhead.com/item=191014/dreadful-hand-module
+	[191014] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=191018/dreadful-leg-module
+	[191018] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#endregion
 }

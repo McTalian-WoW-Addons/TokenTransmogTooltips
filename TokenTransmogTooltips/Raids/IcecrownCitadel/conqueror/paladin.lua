@@ -4,60 +4,60 @@ local mergeTable = ns.mergeTable
 
 ---@class ICCPaladin
 ns._Gear.IcecrownCitadel["PALADIN"] = {
-  ["NORMAL"] = {
-    ["CHEST"] = {
-      [12263] = {
-        25052,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [12248] = {
-        25050,
-      },
-    },
-    ["HELM"] = {
-      [12280] = {
-        25051,
-      },
-    },
-    ["LEGGINGS"] = {
-      [12225] = {
-        25049,
-      },
-    },
-    ["SHOULDERS"] = {
-      [12240] = {
-        25048,
-      },
-    },
-  },
-  ["HEROIC"] = {
-    ["CHEST"] = {
-      [12485] = {
-        25143,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [12469] = {
-        25145,
-      },
-    },
-    ["HELM"] = {
-      [12498] = {
-        25144,
-      },
-    },
-    ["LEGGINGS"] = {
-      [12590] = {
-        25146,
-      },
-    },
-    ["SHOULDERS"] = {
-      [12452] = {
-        25147,
-      },
-    },
-  },
+	["NORMAL"] = {
+		["CHEST"] = {
+			[12263] = {
+				25052,
+			},
+		},
+		["GAUNTLETS"] = {
+			[12248] = {
+				25050,
+			},
+		},
+		["HELM"] = {
+			[12280] = {
+				25051,
+			},
+		},
+		["LEGGINGS"] = {
+			[12225] = {
+				25049,
+			},
+		},
+		["SHOULDERS"] = {
+			[12240] = {
+				25048,
+			},
+		},
+	},
+	["HEROIC"] = {
+		["CHEST"] = {
+			[12485] = {
+				25143,
+			},
+		},
+		["GAUNTLETS"] = {
+			[12469] = {
+				25145,
+			},
+		},
+		["HELM"] = {
+			[12498] = {
+				25144,
+			},
+		},
+		["LEGGINGS"] = {
+			[12590] = {
+				25146,
+			},
+		},
+		["SHOULDERS"] = {
+			[12452] = {
+				25147,
+			},
+		},
+	},
 }
 
 -- Combine all paladin gear into a single table, only useful for raids that have

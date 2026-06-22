@@ -4,60 +4,60 @@ local mergeTable = ns.mergeTable
 
 ---@class TOCPaladin
 ns._Gear.toc["PALADIN"] = {
-  ["ALLIANCE"] = {
-    ["CHEST"] = {
-      [11763] = {
-        23705,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [12005] = {
-        23706,
-      },
-    },
-    ["HELM"] = {
-      [11907] = {
-        23707,
-      },
-    },
-    ["LEGGINGS"] = {
-      [11738] = {
-        23708,
-      },
-    },
-    ["SHOULDERS"] = {
-      [11925] = {
-        23709,
-      },
-    },
-  },
-  ["HORDE"] = {
-    ["CHEST"] = {
-      [11842] = {
-        23725,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [12006] = {
-        23726,
-      },
-    },
-    ["HELM"] = {
-      [11908] = {
-        23727,
-      },
-    },
-    ["LEGGINGS"] = {
-      [11819] = {
-        23728,
-      },
-    },
-    ["SHOULDERS"] = {
-      [11924] = {
-        23729,
-      },
-    },
-  },
+	["ALLIANCE"] = {
+		["CHEST"] = {
+			[11763] = {
+				23705,
+			},
+		},
+		["GAUNTLETS"] = {
+			[12005] = {
+				23706,
+			},
+		},
+		["HELM"] = {
+			[11907] = {
+				23707,
+			},
+		},
+		["LEGGINGS"] = {
+			[11738] = {
+				23708,
+			},
+		},
+		["SHOULDERS"] = {
+			[11925] = {
+				23709,
+			},
+		},
+	},
+	["HORDE"] = {
+		["CHEST"] = {
+			[11842] = {
+				23725,
+			},
+		},
+		["GAUNTLETS"] = {
+			[12006] = {
+				23726,
+			},
+		},
+		["HELM"] = {
+			[11908] = {
+				23727,
+			},
+		},
+		["LEGGINGS"] = {
+			[11819] = {
+				23728,
+			},
+		},
+		["SHOULDERS"] = {
+			[11924] = {
+				23729,
+			},
+		},
+	},
 }
 
 -- Combine all Alliance paladin gear into a single table, only useful for raids that have

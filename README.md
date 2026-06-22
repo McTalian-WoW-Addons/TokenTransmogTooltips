@@ -47,8 +47,8 @@ It _should_ work with tokens from the following sources:
 
 ## Recommended addon(s)
 
-* `Vendor` to set up auto sell/destroy rules
-* Any addon that shows item IDs if you're looking to contribute token data. Alpha builds of TokenTransmogTooltips offer itemIds as well as itemContexts for items. If you would find that useful in a release build, please let me know and I can add a few configuration options to this addon.
+- `Vendor` to set up auto sell/destroy rules
+- Any addon that shows item IDs if you're looking to contribute token data. Alpha builds of TokenTransmogTooltips offer itemIds as well as itemContexts for items. If you would find that useful in a release build, please let me know and I can add a few configuration options to this addon.
 
 ## This doesn't work for this token I just looted!
 

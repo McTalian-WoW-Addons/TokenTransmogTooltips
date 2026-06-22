@@ -4,60 +4,60 @@ local mergeTable = ns.mergeTable
 
 ---@class ICCDeathknight
 ns._Gear.IcecrownCitadel["DEATHKNIGHT"] = {
-  ["NORMAL"] = {
-    ["CHEST"] = {
-      [12571] = {
-        25012,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [12570] = {
-        25010,
-      },
-    },
-    ["HELM"] = {
-      [12569] = {
-        25011,
-      },
-    },
-    ["LEGGINGS"] = {
-      [12568] = {
-        25009,
-      },
-    },
-    ["SHOULDERS"] = {
-      [12567] = {
-        25008,
-      },
-    },
-  },
-  ["HEROIC"] = {
-    ["CHEST"] = {
-      [12444] = {
-        25183,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [12491] = {
-        25185,
-      },
-    },
-    ["HELM"] = {
-      [12463] = {
-        25184,
-      },
-    },
-    ["LEGGINGS"] = {
-      [12448] = {
-        25186,
-      },
-    },
-    ["SHOULDERS"] = {
-      [12474] = {
-        25187,
-      },
-    },
-  },
+	["NORMAL"] = {
+		["CHEST"] = {
+			[12571] = {
+				25012,
+			},
+		},
+		["GAUNTLETS"] = {
+			[12570] = {
+				25010,
+			},
+		},
+		["HELM"] = {
+			[12569] = {
+				25011,
+			},
+		},
+		["LEGGINGS"] = {
+			[12568] = {
+				25009,
+			},
+		},
+		["SHOULDERS"] = {
+			[12567] = {
+				25008,
+			},
+		},
+	},
+	["HEROIC"] = {
+		["CHEST"] = {
+			[12444] = {
+				25183,
+			},
+		},
+		["GAUNTLETS"] = {
+			[12491] = {
+				25185,
+			},
+		},
+		["HELM"] = {
+			[12463] = {
+				25184,
+			},
+		},
+		["LEGGINGS"] = {
+			[12448] = {
+				25186,
+			},
+		},
+		["SHOULDERS"] = {
+			[12474] = {
+				25187,
+			},
+		},
+	},
 }
 
 -- Combine all deathknight gear into a single table, only useful for raids that have
