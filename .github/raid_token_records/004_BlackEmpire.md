@@ -8,13 +8,14 @@
 **Raid Abbreviation**: BEmp
 **Release Patch**: 8.3
 **Has Curio/Wildcard Token**: No
-**Faction-Specific Tokens**:  No
-**Other Special Considerations**: 
-* This is not a raid, these tokens drop from enemies during N'Zoth Assaults in Battle for Azeroth.
-* We cannot use Dungeon Journal Extract Tokens for this content, so token IDs must be gathered manually from in-game sources (e.g. Wowhead, or datamining the game files directly).
-* These tokens do not have difficulties or creation contexts.
-* The token groupings are by armor type (Cloth, Leather, Mail, Plate).
-* Helm, Shoulders, Chest, Belt, Legs, Bracers, Gloves, and Boots exist. No weapons.
+**Faction-Specific Tokens**: No
+**Other Special Considerations**:
+
+- This is not a raid, these tokens drop from enemies during N'Zoth Assaults in Battle for Azeroth.
+- We cannot use Dungeon Journal Extract Tokens for this content, so token IDs must be gathered manually from in-game sources (e.g. Wowhead, or datamining the game files directly).
+- These tokens do not have difficulties or creation contexts.
+- The token groupings are by armor type (Cloth, Leather, Mail, Plate).
+- Helm, Shoulders, Chest, Belt, Legs, Bracers, Gloves, and Boots exist. No weapons.
 
 ---
 
@@ -22,9 +23,9 @@
 
 Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Navigate to the raid, select "All Classes" filter and select a Difficulty in the dropdown. Click the "Extract Tokens" button to copy the token data to your clipboard. Paste the output below. Repeat the process for each difficulty.
 
-
 **Extract Tokens Output**:
-```
+
+```text
 -- Manual data entry (sourced from Wowhead)
 -- Format: [ITEMID] - Token Name - SLOT - Source
 -- Note: No difficulties or item creation contexts. Tokens are armor-type-specific.
@@ -76,7 +77,7 @@ Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Na
 
 With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. A modal will appear where you provide a "label" (usually corresponds to the raid name, cross-reference with one of the class sets in the Transmog Sets UI). After entering the label, select which gear slots have tokens and click "Generate Data". Copy the output and paste the output below:
 
-```
+```text
 ### CLOTH
   HELM, 41042, { 107462, 107753 }
   SHOULDERS, 41050, { 107464, 107752 }
@@ -131,12 +132,12 @@ With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. 
 
 Discerned from Extract Tokens raw output:
 
-| Token Group Name | Classes Covered                                |
-|------------------|------------------------------------------------|
-| CLOTH            | PRIEST, MAGE, WARLOCK                          |
-| LEATHER          | DEMONHUNTER, DRUID, MONK, ROGUE                |
-| MAIL             | EVOKER, HUNTER, SHAMAN                         |
-| PLATE            | DEATHKNIGHT, PALADIN, WARRIOR                  |
+| Token Group Name | Classes Covered                 |
+| ---------------- | ------------------------------- |
+| CLOTH            | PRIEST, MAGE, WARLOCK           |
+| LEATHER          | DEMONHUNTER, DRUID, MONK, ROGUE |
+| MAIL             | EVOKER, HUNTER, SHAMAN          |
+| PLATE            | DEATHKNIGHT, PALADIN, WARRIOR   |
 
 **Note**: Unlike Benthic, each token is armor-type-specific (separate token IDs per armor type per slot), similar to ForbiddenReach. Each token ID maps to only one armor group.
 
@@ -144,44 +145,44 @@ Discerned from Extract Tokens raw output:
 
 Mapping of token IDs to their difficulties and token groups:
 
-| Token ID | Difficulties | Token Group | Slot |
-|----------|--------------|-------------|------|
-| 173396 | NZOTH_ASSAULTS | PLATE | HELM |
-| 173398 | NZOTH_ASSAULTS | PLATE | SHOULDERS |
-| 173393 | NZOTH_ASSAULTS | PLATE | CHEST |
-| 173399 | NZOTH_ASSAULTS | PLATE | BELT |
-| 173397 | NZOTH_ASSAULTS | PLATE | LEGGINGS |
-| 173422 | NZOTH_ASSAULTS | PLATE | BRACERS |
-| 173395 | NZOTH_ASSAULTS | PLATE | GAUNTLETS |
-| 173394 | NZOTH_ASSAULTS | PLATE | BOOTS |
-| 173403 | NZOTH_ASSAULTS | MAIL | HELM |
-| 173405 | NZOTH_ASSAULTS | MAIL | SHOULDERS |
-| 173400 | NZOTH_ASSAULTS | MAIL | CHEST |
-| 173406 | NZOTH_ASSAULTS | MAIL | BELT |
-| 173404 | NZOTH_ASSAULTS | MAIL | LEGGINGS |
-| 173425 | NZOTH_ASSAULTS | MAIL | BRACERS |
-| 173402 | NZOTH_ASSAULTS | MAIL | GAUNTLETS |
-| 173401 | NZOTH_ASSAULTS | MAIL | BOOTS |
-| 173410 | NZOTH_ASSAULTS | LEATHER | HELM |
-| 173412 | NZOTH_ASSAULTS | LEATHER | SHOULDERS |
-| 173407 | NZOTH_ASSAULTS | LEATHER | CHEST |
-| 173413 | NZOTH_ASSAULTS | LEATHER | BELT |
-| 173411 | NZOTH_ASSAULTS | LEATHER | LEGGINGS |
-| 173424 | NZOTH_ASSAULTS | LEATHER | BRACERS |
-| 173409 | NZOTH_ASSAULTS | LEATHER | GAUNTLETS |
-| 173408 | NZOTH_ASSAULTS | LEATHER | BOOTS |
-| 173417 | NZOTH_ASSAULTS | CLOTH | HELM |
-| 173419 | NZOTH_ASSAULTS | CLOTH | SHOULDERS |
-| 173414 | NZOTH_ASSAULTS | CLOTH | CHEST |
-| 173420 | NZOTH_ASSAULTS | CLOTH | BELT |
-| 173418 | NZOTH_ASSAULTS | CLOTH | LEGGINGS |
-| 173423 | NZOTH_ASSAULTS | CLOTH | BRACERS |
-| 173416 | NZOTH_ASSAULTS | CLOTH | GAUNTLETS |
-| 173415 | NZOTH_ASSAULTS | CLOTH | BOOTS |
+| Token ID | Difficulties   | Token Group | Slot      |
+| -------- | -------------- | ----------- | --------- |
+| 173396   | NZOTH_ASSAULTS | PLATE       | HELM      |
+| 173398   | NZOTH_ASSAULTS | PLATE       | SHOULDERS |
+| 173393   | NZOTH_ASSAULTS | PLATE       | CHEST     |
+| 173399   | NZOTH_ASSAULTS | PLATE       | BELT      |
+| 173397   | NZOTH_ASSAULTS | PLATE       | LEGGINGS  |
+| 173422   | NZOTH_ASSAULTS | PLATE       | BRACERS   |
+| 173395   | NZOTH_ASSAULTS | PLATE       | GAUNTLETS |
+| 173394   | NZOTH_ASSAULTS | PLATE       | BOOTS     |
+| 173403   | NZOTH_ASSAULTS | MAIL        | HELM      |
+| 173405   | NZOTH_ASSAULTS | MAIL        | SHOULDERS |
+| 173400   | NZOTH_ASSAULTS | MAIL        | CHEST     |
+| 173406   | NZOTH_ASSAULTS | MAIL        | BELT      |
+| 173404   | NZOTH_ASSAULTS | MAIL        | LEGGINGS  |
+| 173425   | NZOTH_ASSAULTS | MAIL        | BRACERS   |
+| 173402   | NZOTH_ASSAULTS | MAIL        | GAUNTLETS |
+| 173401   | NZOTH_ASSAULTS | MAIL        | BOOTS     |
+| 173410   | NZOTH_ASSAULTS | LEATHER     | HELM      |
+| 173412   | NZOTH_ASSAULTS | LEATHER     | SHOULDERS |
+| 173407   | NZOTH_ASSAULTS | LEATHER     | CHEST     |
+| 173413   | NZOTH_ASSAULTS | LEATHER     | BELT      |
+| 173411   | NZOTH_ASSAULTS | LEATHER     | LEGGINGS  |
+| 173424   | NZOTH_ASSAULTS | LEATHER     | BRACERS   |
+| 173409   | NZOTH_ASSAULTS | LEATHER     | GAUNTLETS |
+| 173408   | NZOTH_ASSAULTS | LEATHER     | BOOTS     |
+| 173417   | NZOTH_ASSAULTS | CLOTH       | HELM      |
+| 173419   | NZOTH_ASSAULTS | CLOTH       | SHOULDERS |
+| 173414   | NZOTH_ASSAULTS | CLOTH       | CHEST     |
+| 173420   | NZOTH_ASSAULTS | CLOTH       | BELT      |
+| 173418   | NZOTH_ASSAULTS | CLOTH       | LEGGINGS  |
+| 173423   | NZOTH_ASSAULTS | CLOTH       | BRACERS   |
+| 173416   | NZOTH_ASSAULTS | CLOTH       | GAUNTLETS |
+| 173415   | NZOTH_ASSAULTS | CLOTH       | BOOTS     |
 
 ### Appearance Data by Token Group, Class, Difficulty, Slot
 
-```
+```text
 ### CLOTH - PRIEST - NZOTH_ASSAULTS
 HELM, 41042, { 107462, 107753 }
 SHOULDERS, 41050, { 107464, 107752 }

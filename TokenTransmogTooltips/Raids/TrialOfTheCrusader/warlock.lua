@@ -4,60 +4,60 @@ local mergeTable = ns.mergeTable
 
 ---@class TOCWarlock
 ns._Gear.toc["WARLOCK"] = {
-  ["ALLIANCE"] = {
-    ["CHEST"] = {
-      [11893] = {
-        23001,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [11950] = {
-        22998,
-      },
-    },
-    ["HELM"] = {
-      [11948] = {
-        22999,
-      },
-    },
-    ["LEGGINGS"] = {
-      [11778] = {
-        23000,
-      },
-    },
-    ["SHOULDERS"] = {
-      [11949] = {
-        23002,
-      },
-    },
-  },
-  ["HORDE"] = {
-    ["CHEST"] = {
-      [11951] = {
-        23014,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [11952] = {
-        23017,
-      },
-    },
-    ["HELM"] = {
-      [11917] = {
-        23016,
-      },
-    },
-    ["LEGGINGS"] = {
-      [11847] = {
-        23015,
-      },
-    },
-    ["SHOULDERS"] = {
-      [11933] = {
-        23013,
-      },
-    },
-  },
+	["ALLIANCE"] = {
+		["CHEST"] = {
+			[11893] = {
+				23001,
+			},
+		},
+		["GAUNTLETS"] = {
+			[11950] = {
+				22998,
+			},
+		},
+		["HELM"] = {
+			[11948] = {
+				22999,
+			},
+		},
+		["LEGGINGS"] = {
+			[11778] = {
+				23000,
+			},
+		},
+		["SHOULDERS"] = {
+			[11949] = {
+				23002,
+			},
+		},
+	},
+	["HORDE"] = {
+		["CHEST"] = {
+			[11951] = {
+				23014,
+			},
+		},
+		["GAUNTLETS"] = {
+			[11952] = {
+				23017,
+			},
+		},
+		["HELM"] = {
+			[11917] = {
+				23016,
+			},
+		},
+		["LEGGINGS"] = {
+			[11847] = {
+				23015,
+			},
+		},
+		["SHOULDERS"] = {
+			[11933] = {
+				23013,
+			},
+		},
+	},
 }
 
 -- Combine all Alliance warlock gear into a single table, only useful for raids that have

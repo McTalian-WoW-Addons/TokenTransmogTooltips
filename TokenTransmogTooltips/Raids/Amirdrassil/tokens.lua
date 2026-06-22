@@ -118,248 +118,247 @@ mergeTable(MYTHIC_ALL_GEAR, mysticGear["MYTHIC"]["ALL"])
 mergeTable(MYTHIC_ALL_GEAR, veneratedGear["MYTHIC"]["ALL"])
 mergeTable(MYTHIC_ALL_GEAR, zenithGear["MYTHIC"]["ALL"])
 
-
 ns.Raids.Amirdrassil = {
 
-  -- https://www.wowhead.com/item=210947/flame-warped-curio
-  [210947] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ALL_GEAR,
-    }
-  },
+	-- https://www.wowhead.com/item=210947/flame-warped-curio
+	[210947] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ALL_GEAR,
+		},
+	},
 
-  --#region Dreadful (Death Knight, Demon Hunter, Warlock)
-  --#region Chest
-  -- https://www.wowhead.com/item=207462/dreadful-verdurous-dreamheart
-  [207462] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=207466/dreadful-tormented-dreamheart
-  [207466] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=207474/dreadful-ashen-dreamheart
-  [207474] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=207478/dreadful-smoldering-dreamheart
-  [207478] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=207470/dreadful-blazing-dreamheart
-  [207470] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HELM,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HELM,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HELM,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HELM,
-    }
-  },
-  --#endregion
-  --#endregion
+	--#region Dreadful (Death Knight, Demon Hunter, Warlock)
+	--#region Chest
+	-- https://www.wowhead.com/item=207462/dreadful-verdurous-dreamheart
+	[207462] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=207466/dreadful-tormented-dreamheart
+	[207466] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=207474/dreadful-ashen-dreamheart
+	[207474] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=207478/dreadful-smoldering-dreamheart
+	[207478] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=207470/dreadful-blazing-dreamheart
+	[207470] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HELM,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HELM,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HELM,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HELM,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Mystic (Druid, Hunter, Mage)
-  --#region Chest
-  -- https://www.wowhead.com/item=207463/mystic-verdurous-dreamheart
-  [207463] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=207467/mystic-tormented-dreamheart
-  [207467] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=207475/mystic-ashen-dreamheart
-  [207475] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=207479/mystic-smoldering-dreamheart
-  [207479] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=207471/mystic-blazing-dreamheart
-  [207471] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HELM,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HELM,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HELM,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HELM,
-    }
-  },
-  --#endregion
-  --#endregion
+	--#region Mystic (Druid, Hunter, Mage)
+	--#region Chest
+	-- https://www.wowhead.com/item=207463/mystic-verdurous-dreamheart
+	[207463] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=207467/mystic-tormented-dreamheart
+	[207467] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=207475/mystic-ashen-dreamheart
+	[207475] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=207479/mystic-smoldering-dreamheart
+	[207479] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=207471/mystic-blazing-dreamheart
+	[207471] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HELM,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HELM,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HELM,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HELM,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Venerated (Paladin, Priest, Shaman)
-  --#region Chest
-  -- https://www.wowhead.com/item=207464/venerated-verdurous-dreamheart
-  [207464] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=207468/venerated-tormented-dreamheart
-  [207468] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=207476/venerated-ashen-dreamheart
-  [207476] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=207480/venerated-smoldering-dreamheart
-  [207480] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=207472/venerated-blazing-dreamheart
-  [207472] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HELM,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HELM,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HELM,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HELM,
-    }
-  },
-  --#endregion
-  --#endregion
+	--#region Venerated (Paladin, Priest, Shaman)
+	--#region Chest
+	-- https://www.wowhead.com/item=207464/venerated-verdurous-dreamheart
+	[207464] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=207468/venerated-tormented-dreamheart
+	[207468] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=207476/venerated-ashen-dreamheart
+	[207476] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=207480/venerated-smoldering-dreamheart
+	[207480] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=207472/venerated-blazing-dreamheart
+	[207472] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HELM,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HELM,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HELM,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HELM,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Zenith (Evoker, Monk, Rogue, Warrior)
-  --#region Chest
-  -- https://www.wowhead.com/item=207465/zenith-verdurous-dreamheart
-  [207465] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_CHEST,
-    }
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=207469/zenith-tormented-dreamheart
-  [207469] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_GAUNTLETS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_GAUNTLETS,
-    }
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=207477/zenith-ashen-dreamheart
-  [207477] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_LEGGINGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_LEGGINGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_LEGGINGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_LEGGINGS,
-    }
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=207481/zenith-smoldering-dreamheart
-  [207481] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_SHOULDERS,
-    }
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=207473/zenith-blazing-dreamheart
-  [207473] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HELM,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HELM,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HELM,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HELM,
-    }
-  },
-  --#endregion
-  --#endregion
+	--#region Zenith (Evoker, Monk, Rogue, Warrior)
+	--#region Chest
+	-- https://www.wowhead.com/item=207465/zenith-verdurous-dreamheart
+	[207465] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_CHEST,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=207469/zenith-tormented-dreamheart
+	[207469] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_GAUNTLETS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_GAUNTLETS,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=207477/zenith-ashen-dreamheart
+	[207477] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_LEGGINGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_LEGGINGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_LEGGINGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_LEGGINGS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=207481/zenith-smoldering-dreamheart
+	[207481] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=207473/zenith-blazing-dreamheart
+	[207473] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HELM,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HELM,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HELM,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HELM,
+		},
+	},
+	--#endregion
+	--#endregion
 }

@@ -10,17 +10,19 @@
 **Has Curio/Wildcard Token**: No
 **Faction-Specific Tokens**: No
 **Other Special Considerations**:
-* This is not a raid, these tokens drop from The Forbidden Reach Dragonflight zone.
-* The generated data from tttgen will not have difficulties, and the only "tier" that we care about is The Forbidden Reach, any other data in tttgen, including audit records, should be ignored.
-* The token groups will be based on armor types.
-* DungeonJournal extract will not work for this content, so token IDs will be provided manually.
-* There should be no item creation contexts for these tokens.
-* There is also a Weapon token that WoWHead says generates spec-appropriate weapons, but the tooltip and anecdotes from comments seem to point to class-appropriate weapons.
-* This includes 9 armor slots (Cloak included) and 1 weapon (could be 2 hand or 1 hand, so many possibilities).
-* There are jewelry tokens but jewelry does not show on the character and therefore does not have appearance data so we don't care about them.
+
+- This is not a raid, these tokens drop from The Forbidden Reach Dragonflight zone.
+- The generated data from tttgen will not have difficulties, and the only "tier" that we care about is The Forbidden Reach, any other data in tttgen, including audit records, should be ignored.
+- The token groups will be based on armor types.
+- DungeonJournal extract will not work for this content, so token IDs will be provided manually.
+- There should be no item creation contexts for these tokens.
+- There is also a Weapon token that WoWHead says generates spec-appropriate weapons, but the tooltip and anecdotes from comments seem to point to class-appropriate weapons.
+- This includes 9 armor slots (Cloak included) and 1 weapon (could be 2 hand or 1 hand, so many possibilities).
+- There are jewelry tokens but jewelry does not show on the character and therefore does not have appearance data so we don't care about them.
 
 For documentation purposes here is the Weapon token, it will be handled later as there is a lot of manual work to do.
-```
+
+```text
 -- Weapon has the same token for all classes, but generates a random class-appropriate weapon
 [203650] - Primalist Weapon - WEAPON - The Forbidden Reach
 ```
@@ -31,9 +33,9 @@ For documentation purposes here is the Weapon token, it will be handled later as
 
 Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Navigate to the raid, select "All Classes" filter and select a Difficulty in the dropdown. Click the "Extract Tokens" button to copy the token data to your clipboard. Paste the output below. Repeat the process for each difficulty.
 
-
 **Extract Tokens Output**:
-```
+
+```text
 -- Manual data entry
 -- Format: [ITEMID] - Token Name - SLOT - "Appearance Tier/Source"
 
@@ -84,7 +86,7 @@ Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Na
 
 With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. A modal will appear where you provide a "label" (usually corresponds to the raid name, cross-reference with one of the class sets in the Transmog Sets UI). After entering the label, select which gear slots have tokens and click "Generate Data". Copy the output and paste the output below:
 
-```
+```text
 === Data for 'Primal Elements' ===
 
 ## TEMPLATE
@@ -390,60 +392,60 @@ No sources found
 
 Discerned from Extract Tokens raw output:
 
-| Token Group Name | Classes Covered                                |
-|------------------|------------------------------------------------|
-| CLOTH            | PRIEST, MAGE, WARLOCK                          |
-| LEATHER          | DEMONHUNTER, DRUID, MONK, ROGUE                |
-| MAIL             | EVOKER, HUNTER, SHAMAN                         |
-| PLATE            | DEATHKNIGHT, PALADIN, WARRIOR                  |
-| UNIVERSAL        | ALL CLASSES                                    |
+| Token Group Name | Classes Covered                 |
+| ---------------- | ------------------------------- |
+| CLOTH            | PRIEST, MAGE, WARLOCK           |
+| LEATHER          | DEMONHUNTER, DRUID, MONK, ROGUE |
+| MAIL             | EVOKER, HUNTER, SHAMAN          |
+| PLATE            | DEATHKNIGHT, PALADIN, WARRIOR   |
+| UNIVERSAL        | ALL CLASSES                     |
 
 ### Token ID Mappings
 
 Mapping of token IDs to their difficulties and token groups:
 
-| Token ID | Difficulties | Token Group | Slot |
-|----------|--------------|-------------|------|
-| 203611 | THE_FORBIDDEN_REACH | PLATE | HELM |
-| 203612 | THE_FORBIDDEN_REACH | CLOTH | HELM |
-| 203613 | THE_FORBIDDEN_REACH | MAIL | HELM |
-| 203614 | THE_FORBIDDEN_REACH | LEATHER | HELM |
-| 203615 | THE_FORBIDDEN_REACH | PLATE | CHEST |
-| 203616 | THE_FORBIDDEN_REACH | CLOTH | CHEST |
-| 203617 | THE_FORBIDDEN_REACH | MAIL | CHEST |
-| 203618 | THE_FORBIDDEN_REACH | LEATHER | CHEST |
-| 203619 | THE_FORBIDDEN_REACH | LEATHER | LEGGINGS |
-| 203620 | THE_FORBIDDEN_REACH | MAIL | LEGGINGS |
-| 203622 | THE_FORBIDDEN_REACH | CLOTH | LEGGINGS |
-| 203623 | THE_FORBIDDEN_REACH | PLATE | LEGGINGS |
-| 203626 | THE_FORBIDDEN_REACH | PLATE | SHOULDERS |
-| 203627 | THE_FORBIDDEN_REACH | CLOTH | SHOULDERS |
-| 203628 | THE_FORBIDDEN_REACH | MAIL | SHOULDERS |
-| 203629 | THE_FORBIDDEN_REACH | LEATHER | SHOULDERS |
-| 203630 | THE_FORBIDDEN_REACH | LEATHER | BRACERS |
-| 203631 | THE_FORBIDDEN_REACH | MAIL | BRACERS |
-| 203632 | THE_FORBIDDEN_REACH | CLOTH | BRACERS |
-| 203633 | THE_FORBIDDEN_REACH | PLATE | BRACERS |
-| 203634 | THE_FORBIDDEN_REACH | PLATE | BELT |
-| 203635 | THE_FORBIDDEN_REACH | CLOTH | BELT |
-| 203636 | THE_FORBIDDEN_REACH | MAIL | BELT |
-| 203637 | THE_FORBIDDEN_REACH | LEATHER | BELT |
-| 203638 | THE_FORBIDDEN_REACH | LEATHER | BOOTS |
-| 203639 | THE_FORBIDDEN_REACH | MAIL | BOOTS |
-| 203640 | THE_FORBIDDEN_REACH | PLATE | BOOTS |
-| 203641 | THE_FORBIDDEN_REACH | CLOTH | BOOTS |
-| 203642 | THE_FORBIDDEN_REACH | CLOTH | GAUNTLETS |
-| 203643 | THE_FORBIDDEN_REACH | PLATE | GAUNTLETS |
-| 203644 | THE_FORBIDDEN_REACH | MAIL | GAUNTLETS |
-| 203645 | THE_FORBIDDEN_REACH | LEATHER | GAUNTLETS |
-| 203646 | THE_FORBIDDEN_REACH | CLOTH | CLOAK |
-| 203646 | THE_FORBIDDEN_REACH | LEATHER | CLOAK |
-| 203646 | THE_FORBIDDEN_REACH | MAIL | CLOAK |
-| 203646 | THE_FORBIDDEN_REACH | PLATE | CLOAK |
+| Token ID | Difficulties        | Token Group | Slot      |
+| -------- | ------------------- | ----------- | --------- |
+| 203611   | THE_FORBIDDEN_REACH | PLATE       | HELM      |
+| 203612   | THE_FORBIDDEN_REACH | CLOTH       | HELM      |
+| 203613   | THE_FORBIDDEN_REACH | MAIL        | HELM      |
+| 203614   | THE_FORBIDDEN_REACH | LEATHER     | HELM      |
+| 203615   | THE_FORBIDDEN_REACH | PLATE       | CHEST     |
+| 203616   | THE_FORBIDDEN_REACH | CLOTH       | CHEST     |
+| 203617   | THE_FORBIDDEN_REACH | MAIL        | CHEST     |
+| 203618   | THE_FORBIDDEN_REACH | LEATHER     | CHEST     |
+| 203619   | THE_FORBIDDEN_REACH | LEATHER     | LEGGINGS  |
+| 203620   | THE_FORBIDDEN_REACH | MAIL        | LEGGINGS  |
+| 203622   | THE_FORBIDDEN_REACH | CLOTH       | LEGGINGS  |
+| 203623   | THE_FORBIDDEN_REACH | PLATE       | LEGGINGS  |
+| 203626   | THE_FORBIDDEN_REACH | PLATE       | SHOULDERS |
+| 203627   | THE_FORBIDDEN_REACH | CLOTH       | SHOULDERS |
+| 203628   | THE_FORBIDDEN_REACH | MAIL        | SHOULDERS |
+| 203629   | THE_FORBIDDEN_REACH | LEATHER     | SHOULDERS |
+| 203630   | THE_FORBIDDEN_REACH | LEATHER     | BRACERS   |
+| 203631   | THE_FORBIDDEN_REACH | MAIL        | BRACERS   |
+| 203632   | THE_FORBIDDEN_REACH | CLOTH       | BRACERS   |
+| 203633   | THE_FORBIDDEN_REACH | PLATE       | BRACERS   |
+| 203634   | THE_FORBIDDEN_REACH | PLATE       | BELT      |
+| 203635   | THE_FORBIDDEN_REACH | CLOTH       | BELT      |
+| 203636   | THE_FORBIDDEN_REACH | MAIL        | BELT      |
+| 203637   | THE_FORBIDDEN_REACH | LEATHER     | BELT      |
+| 203638   | THE_FORBIDDEN_REACH | LEATHER     | BOOTS     |
+| 203639   | THE_FORBIDDEN_REACH | MAIL        | BOOTS     |
+| 203640   | THE_FORBIDDEN_REACH | PLATE       | BOOTS     |
+| 203641   | THE_FORBIDDEN_REACH | CLOTH       | BOOTS     |
+| 203642   | THE_FORBIDDEN_REACH | CLOTH       | GAUNTLETS |
+| 203643   | THE_FORBIDDEN_REACH | PLATE       | GAUNTLETS |
+| 203644   | THE_FORBIDDEN_REACH | MAIL        | GAUNTLETS |
+| 203645   | THE_FORBIDDEN_REACH | LEATHER     | GAUNTLETS |
+| 203646   | THE_FORBIDDEN_REACH | CLOTH       | CLOAK     |
+| 203646   | THE_FORBIDDEN_REACH | LEATHER     | CLOAK     |
+| 203646   | THE_FORBIDDEN_REACH | MAIL        | CLOAK     |
+| 203646   | THE_FORBIDDEN_REACH | PLATE       | CLOAK     |
 
 ### Appearance Data by Token Group, Class, Difficulty, Slot
 
-```
+```text
 ### CLOTH - PRIEST - THE_FORBIDDEN_REACH
 HELM, 77272, 185704
 SHOULDERS, 77273, 185706

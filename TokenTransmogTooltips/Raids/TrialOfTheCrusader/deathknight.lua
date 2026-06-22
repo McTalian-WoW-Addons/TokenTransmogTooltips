@@ -4,60 +4,60 @@ local mergeTable = ns.mergeTable
 
 ---@class TOCDeathknight
 ns._Gear.toc["DEATHKNIGHT"] = {
-  ["ALLIANCE"] = {
-    ["CHEST"] = {
-      [11746] = {
-        23577,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [11791] = {
-        23580,
-      },
-    },
-    ["HELM"] = {
-      [11905] = {
-        23576,
-      },
-    },
-    ["LEGGINGS"] = {
-      [11757] = {
-        23578,
-      },
-    },
-    ["SHOULDERS"] = {
-      [11923] = {
-        23579,
-      },
-    },
-  },
-  ["HORDE"] = {
-    ["CHEST"] = {
-      [11827] = {
-        23601,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [11960] = {
-        23602,
-      },
-    },
-    ["HELM"] = {
-      [11904] = {
-        23603,
-      },
-    },
-    ["LEGGINGS"] = {
-      [11838] = {
-        23604,
-      },
-    },
-    ["SHOULDERS"] = {
-      [11921] = {
-        23605,
-      },
-    },
-  },
+	["ALLIANCE"] = {
+		["CHEST"] = {
+			[11746] = {
+				23577,
+			},
+		},
+		["GAUNTLETS"] = {
+			[11791] = {
+				23580,
+			},
+		},
+		["HELM"] = {
+			[11905] = {
+				23576,
+			},
+		},
+		["LEGGINGS"] = {
+			[11757] = {
+				23578,
+			},
+		},
+		["SHOULDERS"] = {
+			[11923] = {
+				23579,
+			},
+		},
+	},
+	["HORDE"] = {
+		["CHEST"] = {
+			[11827] = {
+				23601,
+			},
+		},
+		["GAUNTLETS"] = {
+			[11960] = {
+				23602,
+			},
+		},
+		["HELM"] = {
+			[11904] = {
+				23603,
+			},
+		},
+		["LEGGINGS"] = {
+			[11838] = {
+				23604,
+			},
+		},
+		["SHOULDERS"] = {
+			[11921] = {
+				23605,
+			},
+		},
+	},
 }
 
 -- Combine all Alliance death knight gear into a single table, only useful for raids that have

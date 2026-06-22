@@ -10,9 +10,10 @@
 **Has Curio/Wildcard Token**: Yes
 **Faction-Specific Tokens**: No
 **Other Special Considerations**:
+
 - This is spread across 3 raids
 - one raid drops the helm, shoulders, gauntlets, leggings tokens
-- one raid drops the chest token with slightly different token naming schema (e.g. "Alnwoven" instead of "Voidwoven", but the *woven part is consistent and the same class compositions)
+- one raid drops the chest token with slightly different token naming schema (e.g. "Alnwoven" instead of "Voidwoven", but the \*woven part is consistent and the same class compositions)
   - I'd recommend something like `_woven`, `_forged`, `_cast`, `_cured` for the folder and token group names so both variations can be represented under the same token group umbrella
 - one raid drops the curio/wildcard token
 
@@ -22,9 +23,9 @@
 
 Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Navigate to the raid, select "All Classes" filter and select a Difficulty in the dropdown. Click the "Extract Tokens" button to copy the token data to your clipboard. Paste the output below. Repeat the process for each difficulty.
 
-
 **Extract Tokens Output**:
-```
+
+```text
 -- Extracted Token Data (Difficulty: RAID_FINDER) --
 -- Format: [ITEMID] - Token Name - SLOT - DIFFICULTY(ItemCreationContext) -- [Classes]
 
@@ -189,7 +190,7 @@ Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Na
 
 With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. A modal will appear where you provide a "label" (usually corresponds to the raid name, cross-reference with one of the class sets in the Transmog Sets UI). After entering the label, select which gear slots have tokens and click "Generate Data". Copy the output and paste the output below:
 
-```
+```text
 === Data for 'The Voidspire' ===
 
 ## TEMPLATE
@@ -1021,44 +1022,44 @@ GAUNTLETS, 127289, 296457
 
 Discerned from Extract Tokens raw output:
 
-| Token Group Name | Classes Covered                                |
-|------------------|------------------------------------------------|
-| _woven           | Priest, Mage, Warlock                          |
-| _forged          | Warrior, Paladin, Death Knight                 |
-| _cured           | Rogue, Monk, Druid, Demon Hunter               |
-| _cast            | Hunter, Shaman, Evoker                         |
+| Token Group Name | Classes Covered                  |
+| ---------------- | -------------------------------- |
+| \_woven          | Priest, Mage, Warlock            |
+| \_forged         | Warrior, Paladin, Death Knight   |
+| \_cured          | Rogue, Monk, Druid, Demon Hunter |
+| \_cast           | Hunter, Shaman, Evoker           |
 
 ### Token ID Mappings
 
 Mapping of token IDs to their difficulties and token groups:
 
-| Token ID | Difficulties                     | Token Group | Slot      |
-|----------|----------------------------------|-------------|-----------|
-| 249351   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _woven      | GAUNTLETS |
-| 249352   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _cured      | GAUNTLETS |
-| 249353   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _cast       | GAUNTLETS |
-| 249354   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _forged     | GAUNTLETS |
-| 249355   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _woven      | HELM      |
-| 249356   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _cured      | HELM      |
-| 249357   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _cast       | HELM      |
-| 249358   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _forged     | HELM      |
-| 249359   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _woven      | LEGGINGS  |
-| 249360   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _cured      | LEGGINGS  |
-| 249361   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _cast       | LEGGINGS  |
-| 249362   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _forged     | LEGGINGS  |
-| 249363   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _woven      | SHOULDERS |
-| 249364   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _cured      | SHOULDERS |
-| 249365   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _cast       | SHOULDERS |
-| 249366   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _forged     | SHOULDERS |
-| 249347   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _woven      | CHEST     |
-| 249348   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _cured      | CHEST     |
-| 249349   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _cast       | CHEST     |
-| 249350   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | _forged     | CHEST     |
+| Token ID | Difficulties                        | Token Group | Slot      |
+| -------- | ----------------------------------- | ----------- | --------- |
+| 249351   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_woven     | GAUNTLETS |
+| 249352   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_cured     | GAUNTLETS |
+| 249353   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_cast      | GAUNTLETS |
+| 249354   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_forged    | GAUNTLETS |
+| 249355   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_woven     | HELM      |
+| 249356   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_cured     | HELM      |
+| 249357   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_cast      | HELM      |
+| 249358   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_forged    | HELM      |
+| 249359   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_woven     | LEGGINGS  |
+| 249360   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_cured     | LEGGINGS  |
+| 249361   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_cast      | LEGGINGS  |
+| 249362   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_forged    | LEGGINGS  |
+| 249363   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_woven     | SHOULDERS |
+| 249364   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_cured     | SHOULDERS |
+| 249365   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_cast      | SHOULDERS |
+| 249366   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_forged    | SHOULDERS |
+| 249347   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_woven     | CHEST     |
+| 249348   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_cured     | CHEST     |
+| 249349   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_cast      | CHEST     |
+| 249350   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | \_forged    | CHEST     |
 | 249367   | RAID_FINDER, NORMAL, HEROIC, MYTHIC | curio       | ALL       |
 
 ### Appearance Data by Token Group, Class, Difficulty, Slot
 
-```
+```text
 ### _woven - PRIEST - RAID_FINDER
 HELM, 126918, 297631
 SHOULDERS, 126919, 297607

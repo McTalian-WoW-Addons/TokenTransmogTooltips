@@ -142,245 +142,245 @@ mergeTable(MYTHIC_ALL_GEAR, MYTHIC_ZENITH_ALL)
 
 ns.Raids.LOU = {
 
-    -- https://www.wowhead.com/item=228819/excessively-bejeweled-curio
-  [228819] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ALL_GEAR,
-    },
-  },
+	-- https://www.wowhead.com/item=228819/excessively-bejeweled-curio
+	[228819] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ALL_GEAR,
+		},
+	},
 
-  --#region Dreadful (Death Knight, Demon Hunter, Warlock)
-  --#region Chest
-  -- https://www.wowhead.com/item=228799/dreadful-greased-gallybux
-  [228799] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_CHEST,
-    },
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=228807/dreadful-gilded-gallybux
-  [228807] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HEAD,
-    },
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=228811/dreadful-rusty-gallybux
-  [228811] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_LEGS,
-    },
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=228803/dreadful-bloody-gallybux
-  [228803] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HANDS,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=228815/dreadful-polished-gallybux
-  [228815] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Dreadful (Death Knight, Demon Hunter, Warlock)
+	--#region Chest
+	-- https://www.wowhead.com/item=228799/dreadful-greased-gallybux
+	[228799] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_CHEST,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=228807/dreadful-gilded-gallybux
+	[228807] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HEAD,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=228811/dreadful-rusty-gallybux
+	[228811] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_LEGS,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=228803/dreadful-bloody-gallybux
+	[228803] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_HANDS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=228815/dreadful-polished-gallybux
+	[228815] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_DREADFUL_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_DREADFUL_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Mystic (Druid, Hunter, Mage)
-  --#region Chest
-  -- https://www.wowhead.com/item=228800/mystic-greased-gallybux
-  [228800] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_CHEST,
-    },
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=228808/mystic-gilded-gallybux
-  [228808] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HEAD,
-    },
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=228812/mystic-rusty-gallybux
-  [228812] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_LEGS,
-    },
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=228804/mystic-bloody-gallybux
-  [228804] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HANDS,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=228816/mystic-polished-gallybux
-  [228816] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Mystic (Druid, Hunter, Mage)
+	--#region Chest
+	-- https://www.wowhead.com/item=228800/mystic-greased-gallybux
+	[228800] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_CHEST,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=228808/mystic-gilded-gallybux
+	[228808] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HEAD,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=228812/mystic-rusty-gallybux
+	[228812] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_LEGS,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=228804/mystic-bloody-gallybux
+	[228804] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_HANDS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=228816/mystic-polished-gallybux
+	[228816] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_MYSTIC_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_MYSTIC_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Venerated (Paladin, Priest, Shaman)
-  --#region Chest
-  -- https://www.wowhead.com/item=228801/venerated-greased-gallybux
-  [228801] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_CHEST,
-    },
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=228809/venerated-gilded-gallybux
-  [228809] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HEAD,
-    },
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=228813/venerated-rusty-gallybux
-  [228813] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_LEGS,
-    },
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=228805/venerated-bloody-gallybux
-  [228805] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HANDS,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=228817/venerated-polished-gallybux
-  [228817] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Venerated (Paladin, Priest, Shaman)
+	--#region Chest
+	-- https://www.wowhead.com/item=228801/venerated-greased-gallybux
+	[228801] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_CHEST,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=228809/venerated-gilded-gallybux
+	[228809] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HEAD,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=228813/venerated-rusty-gallybux
+	[228813] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_LEGS,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=228805/venerated-bloody-gallybux
+	[228805] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_HANDS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=228817/venerated-polished-gallybux
+	[228817] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_VENERATED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_VENERATED_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Zenith (Evoker, Monk, Rogue, Warrior)
-  --#region Chest
-  -- https://www.wowhead.com/item=228802/zenith-greased-gallybux
-  [228802] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_CHEST,
-    },
-  },
-  --#endregion
-  --#region Head
-  -- https://www.wowhead.com/item=228810/zenith-gilded-gallybux
-  [228810] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HEAD,
-    },
-  },
-  --#endregion
-  --#region Legs
-  -- https://www.wowhead.com/item=228814/zenith-rusty-gallybux
-  [228814] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_LEGS,
-    },
-  },
-  --#endregion
-  --#region Hands
-  -- https://www.wowhead.com/item=228806/zenith-bloody-gallybux
-  [228806] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HANDS,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  -- https://www.wowhead.com/item=228818/zenith-polished-gallybux
-  [228818] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Zenith (Evoker, Monk, Rogue, Warrior)
+	--#region Chest
+	-- https://www.wowhead.com/item=228802/zenith-greased-gallybux
+	[228802] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_CHEST,
+		},
+	},
+	--#endregion
+	--#region Head
+	-- https://www.wowhead.com/item=228810/zenith-gilded-gallybux
+	[228810] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HEAD,
+		},
+	},
+	--#endregion
+	--#region Legs
+	-- https://www.wowhead.com/item=228814/zenith-rusty-gallybux
+	[228814] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_LEGS,
+		},
+	},
+	--#endregion
+	--#region Hands
+	-- https://www.wowhead.com/item=228806/zenith-bloody-gallybux
+	[228806] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_HANDS,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	-- https://www.wowhead.com/item=228818/zenith-polished-gallybux
+	[228818] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ZENITH_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ZENITH_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#endregion
 }

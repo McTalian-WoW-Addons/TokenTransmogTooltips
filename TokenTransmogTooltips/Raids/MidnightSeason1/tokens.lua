@@ -125,225 +125,225 @@ mergeTable(MYTHIC_ALL_GEAR, castGear["MYTHIC"]["ALL"])
 
 ns.Raids.MS1 = {
 
-  -- Curio token (wildcard)
-  [249367] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_ALL_GEAR,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_ALL_GEAR,
-    },
-  },
+	-- Curio token (wildcard)
+	[249367] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_ALL_GEAR,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_ALL_GEAR,
+		},
+	},
 
-  --#region Woven (Priest, Mage, Warlock)
-  --#region Helm
-  [249355] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_WOVEN_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_WOVEN_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_WOVEN_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_WOVEN_HEAD,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  [249363] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_WOVEN_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_WOVEN_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_WOVEN_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_WOVEN_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#region Chest
-  [249347] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_WOVEN_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_WOVEN_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_WOVEN_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_WOVEN_CHEST,
-    },
-  },
-  --#endregion
-  --#region Leggings
-  [249359] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_WOVEN_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_WOVEN_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_WOVEN_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_WOVEN_LEGS,
-    },
-  },
-  --#endregion
-  --#region Gauntlets
-  [249351] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_WOVEN_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_WOVEN_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_WOVEN_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_WOVEN_HANDS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Woven (Priest, Mage, Warlock)
+	--#region Helm
+	[249355] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_WOVEN_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_WOVEN_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_WOVEN_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_WOVEN_HEAD,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	[249363] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_WOVEN_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_WOVEN_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_WOVEN_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_WOVEN_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	[249347] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_WOVEN_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_WOVEN_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_WOVEN_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_WOVEN_CHEST,
+		},
+	},
+	--#endregion
+	--#region Leggings
+	[249359] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_WOVEN_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_WOVEN_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_WOVEN_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_WOVEN_LEGS,
+		},
+	},
+	--#endregion
+	--#region Gauntlets
+	[249351] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_WOVEN_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_WOVEN_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_WOVEN_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_WOVEN_HANDS,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Forged (Warrior, Paladin, Death Knight)
-  --#region Helm
-  [249358] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_FORGED_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_FORGED_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_FORGED_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_FORGED_HEAD,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  [249366] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_FORGED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_FORGED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_FORGED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_FORGED_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#region Chest
-  [249350] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_FORGED_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_FORGED_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_FORGED_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_FORGED_CHEST,
-    },
-  },
-  --#endregion
-  --#region Leggings
-  [249362] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_FORGED_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_FORGED_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_FORGED_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_FORGED_LEGS,
-    },
-  },
-  --#endregion
-  --#region Gauntlets
-  [249354] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_FORGED_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_FORGED_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_FORGED_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_FORGED_HANDS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Forged (Warrior, Paladin, Death Knight)
+	--#region Helm
+	[249358] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_FORGED_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_FORGED_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_FORGED_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_FORGED_HEAD,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	[249366] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_FORGED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_FORGED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_FORGED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_FORGED_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	[249350] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_FORGED_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_FORGED_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_FORGED_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_FORGED_CHEST,
+		},
+	},
+	--#endregion
+	--#region Leggings
+	[249362] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_FORGED_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_FORGED_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_FORGED_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_FORGED_LEGS,
+		},
+	},
+	--#endregion
+	--#region Gauntlets
+	[249354] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_FORGED_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_FORGED_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_FORGED_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_FORGED_HANDS,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Cured (Rogue, Monk, Druid, Demon Hunter)
-  --#region Helm
-  [249356] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CURED_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_CURED_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_CURED_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_CURED_HEAD,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  [249364] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CURED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_CURED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_CURED_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_CURED_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#region Chest
-  [249348] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CURED_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_CURED_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_CURED_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_CURED_CHEST,
-    },
-  },
-  --#endregion
-  --#region Leggings
-  [249360] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CURED_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_CURED_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_CURED_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_CURED_LEGS,
-    },
-  },
-  --#endregion
-  --#region Gauntlets
-  [249352] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CURED_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_CURED_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_CURED_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_CURED_HANDS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Cured (Rogue, Monk, Druid, Demon Hunter)
+	--#region Helm
+	[249356] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CURED_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_CURED_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_CURED_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_CURED_HEAD,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	[249364] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CURED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_CURED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_CURED_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_CURED_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	[249348] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CURED_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_CURED_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_CURED_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_CURED_CHEST,
+		},
+	},
+	--#endregion
+	--#region Leggings
+	[249360] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CURED_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_CURED_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_CURED_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_CURED_LEGS,
+		},
+	},
+	--#endregion
+	--#region Gauntlets
+	[249352] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CURED_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_CURED_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_CURED_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_CURED_HANDS,
+		},
+	},
+	--#endregion
+	--#endregion
 
-  --#region Cast (Hunter, Shaman, Evoker)
-  --#region Helm
-  [249357] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CAST_HEAD,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_CAST_HEAD,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_CAST_HEAD,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_CAST_HEAD,
-    },
-  },
-  --#endregion
-  --#region Shoulders
-  [249365] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CAST_SHOULDERS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_CAST_SHOULDERS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_CAST_SHOULDERS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_CAST_SHOULDERS,
-    },
-  },
-  --#endregion
-  --#region Chest
-  [249349] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CAST_CHEST,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_CAST_CHEST,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_CAST_CHEST,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_CAST_CHEST,
-    },
-  },
-  --#endregion
-  --#region Leggings
-  [249361] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CAST_LEGS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_CAST_LEGS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_CAST_LEGS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_CAST_LEGS,
-    },
-  },
-  --#endregion
-  --#region Gauntlets
-  [249353] = {
-    Difficulties = {
-      [Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CAST_HANDS,
-      [Enum.ItemCreationContext.RaidNormal] = NORMAL_CAST_HANDS,
-      [Enum.ItemCreationContext.RaidHeroic] = HEROIC_CAST_HANDS,
-      [Enum.ItemCreationContext.RaidMythic] = MYTHIC_CAST_HANDS,
-    },
-  },
-  --#endregion
-  --#endregion
+	--#region Cast (Hunter, Shaman, Evoker)
+	--#region Helm
+	[249357] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CAST_HEAD,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_CAST_HEAD,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_CAST_HEAD,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_CAST_HEAD,
+		},
+	},
+	--#endregion
+	--#region Shoulders
+	[249365] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CAST_SHOULDERS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_CAST_SHOULDERS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_CAST_SHOULDERS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_CAST_SHOULDERS,
+		},
+	},
+	--#endregion
+	--#region Chest
+	[249349] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CAST_CHEST,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_CAST_CHEST,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_CAST_CHEST,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_CAST_CHEST,
+		},
+	},
+	--#endregion
+	--#region Leggings
+	[249361] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CAST_LEGS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_CAST_LEGS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_CAST_LEGS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_CAST_LEGS,
+		},
+	},
+	--#endregion
+	--#region Gauntlets
+	[249353] = {
+		Difficulties = {
+			[Enum.ItemCreationContext.RaidFinder] = RAID_FINDER_CAST_HANDS,
+			[Enum.ItemCreationContext.RaidNormal] = NORMAL_CAST_HANDS,
+			[Enum.ItemCreationContext.RaidHeroic] = HEROIC_CAST_HANDS,
+			[Enum.ItemCreationContext.RaidMythic] = MYTHIC_CAST_HANDS,
+		},
+	},
+	--#endregion
+	--#endregion
 }

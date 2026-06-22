@@ -4,60 +4,60 @@ local mergeTable = ns.mergeTable
 
 ---@class TOCPriest
 ns._Gear.toc["PRIEST"] = {
-  ["ALLIANCE"] = {
-    ["CHEST"] = {
-      [11723] = {
-        23231,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [11980] = {
-        23228,
-      },
-    },
-    ["HELM"] = {
-      [11919] = {
-        23229,
-      },
-    },
-    ["LEGGINGS"] = {
-      [11733] = {
-        23230,
-      },
-    },
-    ["SHOULDERS"] = {
-      [11934] = {
-        23232,
-      },
-    },
-  },
-  ["HORDE"] = {
-    ["CHEST"] = {
-      [11807] = {
-        23256,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [11982] = {
-        23253,
-      },
-    },
-    ["HELM"] = {
-      [11920] = {
-        23254,
-      },
-    },
-    ["LEGGINGS"] = {
-      [11815] = {
-        23255,
-      },
-    },
-    ["SHOULDERS"] = {
-      [11935] = {
-        23257,
-      },
-    },
-  },
+	["ALLIANCE"] = {
+		["CHEST"] = {
+			[11723] = {
+				23231,
+			},
+		},
+		["GAUNTLETS"] = {
+			[11980] = {
+				23228,
+			},
+		},
+		["HELM"] = {
+			[11919] = {
+				23229,
+			},
+		},
+		["LEGGINGS"] = {
+			[11733] = {
+				23230,
+			},
+		},
+		["SHOULDERS"] = {
+			[11934] = {
+				23232,
+			},
+		},
+	},
+	["HORDE"] = {
+		["CHEST"] = {
+			[11807] = {
+				23256,
+			},
+		},
+		["GAUNTLETS"] = {
+			[11982] = {
+				23253,
+			},
+		},
+		["HELM"] = {
+			[11920] = {
+				23254,
+			},
+		},
+		["LEGGINGS"] = {
+			[11815] = {
+				23255,
+			},
+		},
+		["SHOULDERS"] = {
+			[11935] = {
+				23257,
+			},
+		},
+	},
 }
 
 -- Combine all Alliance priest gear into a single table, only useful for raids that have

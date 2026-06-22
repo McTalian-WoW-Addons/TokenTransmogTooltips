@@ -10,11 +10,12 @@
 **Has Curio/Wildcard Token**: No
 **Faction-Specific Tokens**: No
 **Other Special Considerations**:
-* This is not a raid, these tokens drop from enemies in Nazjatar Battle for Azeroth zone.
-* We cannot use Dungeon Journal Extract Tokens for this content, so token IDs must be gathered manually from in-game sources (e.g. Wowhead, or datamining the game files directly).
-* These tokens do not have difficulties or creation contexts.
-* There are no token groups, each token can be used by all classes, but the item generated will be class-specific.
-* Helm, Shoulders, Cloak, Chest, Belt, Legs, Bracers, Gloves, and Boots tokens exist. No weapons.
+
+- This is not a raid, these tokens drop from enemies in Nazjatar Battle for Azeroth zone.
+- We cannot use Dungeon Journal Extract Tokens for this content, so token IDs must be gathered manually from in-game sources (e.g. Wowhead, or datamining the game files directly).
+- These tokens do not have difficulties or creation contexts.
+- There are no token groups, each token can be used by all classes, but the item generated will be class-specific.
+- Helm, Shoulders, Cloak, Chest, Belt, Legs, Bracers, Gloves, and Boots tokens exist. No weapons.
 
 ---
 
@@ -22,9 +23,9 @@
 
 Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Navigate to the raid, select "All Classes" filter and select a Difficulty in the dropdown. Click the "Extract Tokens" button to copy the token data to your clipboard. Paste the output below. Repeat the process for each difficulty.
 
-
 **Extract Tokens Output**:
-```
+
+```text
 -- Manual data entry (sourced from Wowhead)
 -- Format: [ITEMID] - Token Name - SLOT - Source
 -- Note: No difficulties or item creation contexts. Each token is used by all classes but generates class-specific items.
@@ -46,7 +47,7 @@ Open the DungeonJournal in-game with an alpha build of TokenTransmogTooltips. Na
 
 With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. A modal will appear where you provide a "label" (usually corresponds to the raid name, cross-reference with one of the class sets in the Transmog Sets UI). After entering the label, select which gear slots have tokens and click "Generate Data". Copy the output and paste the output below:
 
-```
+```text
 ### CLOTH
   HELM, 40596, { 104104 }
   SHOULDERS, 40604, { 104106 }
@@ -105,12 +106,12 @@ With an alpha build of TokenTransmogTooltips, run `/tttgen` in the chat window. 
 
 Discerned from Extract Tokens raw output:
 
-| Token Group Name | Classes Covered                                |
-|------------------|------------------------------------------------|
-| CLOTH            | PRIEST, MAGE, WARLOCK                          |
-| LEATHER          | DEMONHUNTER, DRUID, MONK, ROGUE               |
-| MAIL             | EVOKER, HUNTER, SHAMAN                         |
-| PLATE            | DEATHKNIGHT, PALADIN, WARRIOR                  |
+| Token Group Name | Classes Covered                 |
+| ---------------- | ------------------------------- |
+| CLOTH            | PRIEST, MAGE, WARLOCK           |
+| LEATHER          | DEMONHUNTER, DRUID, MONK, ROGUE |
+| MAIL             | EVOKER, HUNTER, SHAMAN          |
+| PLATE            | DEATHKNIGHT, PALADIN, WARRIOR   |
 
 **Note**: All tokens are universal — each token can be used by any class but generates armor-type-specific items. Unlike ForbiddenReach which has separate tokens per armor type, Benthic tokens each map to ALL 4 armor groups. The tokens.lua will need to merge all armor types' data per slot for each token ID.
 
@@ -118,21 +119,21 @@ Discerned from Extract Tokens raw output:
 
 Mapping of token IDs to their difficulties and token groups:
 
-| Token ID | Difficulties | Token Group | Slot |
-|----------|--------------|-------------|------|
-| 169479 | NAZJATAR | CLOTH, LEATHER, MAIL, PLATE | HELM |
-| 169484 | NAZJATAR | CLOTH, LEATHER, MAIL, PLATE | SHOULDERS |
-| 169481 | NAZJATAR | CLOTH, LEATHER, MAIL, PLATE | CLOAK |
-| 169480 | NAZJATAR | CLOTH, LEATHER, MAIL, PLATE | CHEST |
-| 169477 | NAZJATAR | CLOTH, LEATHER, MAIL, PLATE | BELT |
-| 169478 | NAZJATAR | CLOTH, LEATHER, MAIL, PLATE | BRACERS |
-| 169485 | NAZJATAR | CLOTH, LEATHER, MAIL, PLATE | GAUNTLETS |
-| 169482 | NAZJATAR | CLOTH, LEATHER, MAIL, PLATE | LEGGINGS |
-| 169483 | NAZJATAR | CLOTH, LEATHER, MAIL, PLATE | BOOTS |
+| Token ID | Difficulties | Token Group                 | Slot      |
+| -------- | ------------ | --------------------------- | --------- |
+| 169479   | NAZJATAR     | CLOTH, LEATHER, MAIL, PLATE | HELM      |
+| 169484   | NAZJATAR     | CLOTH, LEATHER, MAIL, PLATE | SHOULDERS |
+| 169481   | NAZJATAR     | CLOTH, LEATHER, MAIL, PLATE | CLOAK     |
+| 169480   | NAZJATAR     | CLOTH, LEATHER, MAIL, PLATE | CHEST     |
+| 169477   | NAZJATAR     | CLOTH, LEATHER, MAIL, PLATE | BELT      |
+| 169478   | NAZJATAR     | CLOTH, LEATHER, MAIL, PLATE | BRACERS   |
+| 169485   | NAZJATAR     | CLOTH, LEATHER, MAIL, PLATE | GAUNTLETS |
+| 169482   | NAZJATAR     | CLOTH, LEATHER, MAIL, PLATE | LEGGINGS  |
+| 169483   | NAZJATAR     | CLOTH, LEATHER, MAIL, PLATE | BOOTS     |
 
 ### Appearance Data by Token Group, Class, Difficulty, Slot
 
-```
+```text
 ### CLOTH - PRIEST - NAZJATAR
 HELM, 40596, { 104104 }
 SHOULDERS, 40604, { 104106 }

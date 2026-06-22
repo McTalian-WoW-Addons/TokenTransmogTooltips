@@ -4,60 +4,60 @@ local mergeTable = ns.mergeTable
 
 ---@class ICCShaman
 ns._Gear.IcecrownCitadel["SHAMAN"] = {
-  ["NORMAL"] = {
-    ["CHEST"] = {
-      [12345] = {
-        25078,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [12282] = {
-        25079,
-      },
-    },
-    ["HELM"] = {
-      [12355] = {
-        25080,
-      },
-    },
-    ["LEGGINGS"] = {
-      [12223] = {
-        25081,
-      },
-    },
-    ["SHOULDERS"] = {
-      [12279] = {
-        25082,
-      },
-    },
-  },
-  ["HEROIC"] = {
-    ["CHEST"] = {
-      [12510] = {
-        25117,
-      },
-    },
-    ["GAUNTLETS"] = {
-      [12500] = {
-        25116,
-      },
-    },
-    ["HELM"] = {
-      [12458] = {
-        25115,
-      },
-    },
-    ["LEGGINGS"] = {
-      [12587] = {
-        25114,
-      },
-    },
-    ["SHOULDERS"] = {
-      [26844] = {
-        25113,
-      },
-    },
-  },
+	["NORMAL"] = {
+		["CHEST"] = {
+			[12345] = {
+				25078,
+			},
+		},
+		["GAUNTLETS"] = {
+			[12282] = {
+				25079,
+			},
+		},
+		["HELM"] = {
+			[12355] = {
+				25080,
+			},
+		},
+		["LEGGINGS"] = {
+			[12223] = {
+				25081,
+			},
+		},
+		["SHOULDERS"] = {
+			[12279] = {
+				25082,
+			},
+		},
+	},
+	["HEROIC"] = {
+		["CHEST"] = {
+			[12510] = {
+				25117,
+			},
+		},
+		["GAUNTLETS"] = {
+			[12500] = {
+				25116,
+			},
+		},
+		["HELM"] = {
+			[12458] = {
+				25115,
+			},
+		},
+		["LEGGINGS"] = {
+			[12587] = {
+				25114,
+			},
+		},
+		["SHOULDERS"] = {
+			[26844] = {
+				25113,
+			},
+		},
+	},
 }
 
 -- Combine all shaman gear into a single table, only useful for raids that have
