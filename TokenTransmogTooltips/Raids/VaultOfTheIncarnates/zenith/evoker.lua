@@ -5,6 +5,11 @@ local mergeTable = ns.mergeTable
 ---@class VotIEvoker
 ns._Gear.VotI["EVOKER"] = {
 	["RAID_FINDER"] = {
+		["HELM"] = {
+			[76886] = {
+				182712,
+			},
+		},
 		["SHOULDERS"] = {
 			[76887] = {
 				182720,
@@ -27,6 +32,11 @@ ns._Gear.VotI["EVOKER"] = {
 		},
 	},
 	["NORMAL"] = {
+		["HELM"] = {
+			[76864] = {
+				182711,
+			},
+		},
 		["SHOULDERS"] = {
 			[76865] = {
 				182719,
@@ -49,6 +59,11 @@ ns._Gear.VotI["EVOKER"] = {
 		},
 	},
 	["HEROIC"] = {
+		["HELM"] = {
+			[76897] = {
+				182713,
+			},
+		},
 		["SHOULDERS"] = {
 			[76898] = {
 				182721,
@@ -71,6 +86,11 @@ ns._Gear.VotI["EVOKER"] = {
 		},
 	},
 	["MYTHIC"] = {
+		["HELM"] = {
+			[76862] = {
+				182714,
+			},
+		},
 		["SHOULDERS"] = {
 			[76863] = {
 				182722,
@@ -97,24 +117,28 @@ ns._Gear.VotI["EVOKER"] = {
 -- Combine all evoker gear into a single table, only useful for raids that have
 -- tokens that can be turned in for any slot within a difficulty.
 local RAID_FINDER_EVOKER_GEAR = {}
+mergeTable(RAID_FINDER_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["RAID_FINDER"]["HELM"])
 mergeTable(RAID_FINDER_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["RAID_FINDER"]["CHEST"])
 mergeTable(RAID_FINDER_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["RAID_FINDER"]["GAUNTLETS"])
 mergeTable(RAID_FINDER_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["RAID_FINDER"]["LEGGINGS"])
 mergeTable(RAID_FINDER_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["RAID_FINDER"]["SHOULDERS"])
 
 local NORMAL_EVOKER_GEAR = {}
+mergeTable(NORMAL_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["NORMAL"]["HELM"])
 mergeTable(NORMAL_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["NORMAL"]["CHEST"])
 mergeTable(NORMAL_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["NORMAL"]["GAUNTLETS"])
 mergeTable(NORMAL_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["NORMAL"]["LEGGINGS"])
 mergeTable(NORMAL_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["NORMAL"]["SHOULDERS"])
 
 local HEROIC_EVOKER_GEAR = {}
+mergeTable(HEROIC_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["HEROIC"]["HELM"])
 mergeTable(HEROIC_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["HEROIC"]["CHEST"])
 mergeTable(HEROIC_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["HEROIC"]["GAUNTLETS"])
 mergeTable(HEROIC_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["HEROIC"]["LEGGINGS"])
 mergeTable(HEROIC_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["HEROIC"]["SHOULDERS"])
 
 local MYTHIC_EVOKER_GEAR = {}
+mergeTable(MYTHIC_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["MYTHIC"]["HELM"])
 mergeTable(MYTHIC_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["MYTHIC"]["CHEST"])
 mergeTable(MYTHIC_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["MYTHIC"]["GAUNTLETS"])
 mergeTable(MYTHIC_EVOKER_GEAR, ns._Gear.VotI["EVOKER"]["MYTHIC"]["LEGGINGS"])
