@@ -13,6 +13,11 @@ local mage = gear["MAGE"]
 ---@class VotIMystic
 ns._Gear.VotI["MYSTIC"] = {
 	["RAID_FINDER"] = {
+		["HELM"] = {
+			["DRUID"] = druid["RAID_FINDER"]["HELM"],
+			["HUNTER"] = hunter["RAID_FINDER"]["HELM"],
+			["MAGE"] = mage["RAID_FINDER"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["DRUID"] = druid["RAID_FINDER"]["SHOULDERS"],
 			["HUNTER"] = hunter["RAID_FINDER"]["SHOULDERS"],
@@ -40,6 +45,11 @@ ns._Gear.VotI["MYSTIC"] = {
 		},
 	},
 	["NORMAL"] = {
+		["HELM"] = {
+			["DRUID"] = druid["NORMAL"]["HELM"],
+			["HUNTER"] = hunter["NORMAL"]["HELM"],
+			["MAGE"] = mage["NORMAL"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["DRUID"] = druid["NORMAL"]["SHOULDERS"],
 			["HUNTER"] = hunter["NORMAL"]["SHOULDERS"],
@@ -67,6 +77,11 @@ ns._Gear.VotI["MYSTIC"] = {
 		},
 	},
 	["HEROIC"] = {
+		["HELM"] = {
+			["DRUID"] = druid["HEROIC"]["HELM"],
+			["HUNTER"] = hunter["HEROIC"]["HELM"],
+			["MAGE"] = mage["HEROIC"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["DRUID"] = druid["HEROIC"]["SHOULDERS"],
 			["HUNTER"] = hunter["HEROIC"]["SHOULDERS"],
@@ -94,6 +109,11 @@ ns._Gear.VotI["MYSTIC"] = {
 		},
 	},
 	["MYTHIC"] = {
+		["HELM"] = {
+			["DRUID"] = druid["MYTHIC"]["HELM"],
+			["HUNTER"] = hunter["MYTHIC"]["HELM"],
+			["MAGE"] = mage["MYTHIC"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["DRUID"] = druid["MYTHIC"]["SHOULDERS"],
 			["HUNTER"] = hunter["MYTHIC"]["SHOULDERS"],

@@ -13,6 +13,11 @@ local warlock = gear["WARLOCK"]
 ---@class VotIDreadful
 ns._Gear.VotI["DREADFUL"] = {
 	["RAID_FINDER"] = {
+		["HELM"] = {
+			["DEATHKNIGHT"] = deathknight["RAID_FINDER"]["HELM"],
+			["DEMONHUNTER"] = demonhunter["RAID_FINDER"]["HELM"],
+			["WARLOCK"] = warlock["RAID_FINDER"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["DEATHKNIGHT"] = deathknight["RAID_FINDER"]["SHOULDERS"],
 			["DEMONHUNTER"] = demonhunter["RAID_FINDER"]["SHOULDERS"],
@@ -40,6 +45,11 @@ ns._Gear.VotI["DREADFUL"] = {
 		},
 	},
 	["NORMAL"] = {
+		["HELM"] = {
+			["DEATHKNIGHT"] = deathknight["NORMAL"]["HELM"],
+			["DEMONHUNTER"] = demonhunter["NORMAL"]["HELM"],
+			["WARLOCK"] = warlock["NORMAL"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["DEATHKNIGHT"] = deathknight["NORMAL"]["SHOULDERS"],
 			["DEMONHUNTER"] = demonhunter["NORMAL"]["SHOULDERS"],
@@ -67,6 +77,11 @@ ns._Gear.VotI["DREADFUL"] = {
 		},
 	},
 	["HEROIC"] = {
+		["HELM"] = {
+			["DEATHKNIGHT"] = deathknight["HEROIC"]["HELM"],
+			["DEMONHUNTER"] = demonhunter["HEROIC"]["HELM"],
+			["WARLOCK"] = warlock["HEROIC"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["DEATHKNIGHT"] = deathknight["HEROIC"]["SHOULDERS"],
 			["DEMONHUNTER"] = demonhunter["HEROIC"]["SHOULDERS"],
@@ -94,6 +109,11 @@ ns._Gear.VotI["DREADFUL"] = {
 		},
 	},
 	["MYTHIC"] = {
+		["HELM"] = {
+			["DEATHKNIGHT"] = deathknight["MYTHIC"]["HELM"],
+			["DEMONHUNTER"] = demonhunter["MYTHIC"]["HELM"],
+			["WARLOCK"] = warlock["MYTHIC"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["DEATHKNIGHT"] = deathknight["MYTHIC"]["SHOULDERS"],
 			["DEMONHUNTER"] = demonhunter["MYTHIC"]["SHOULDERS"],

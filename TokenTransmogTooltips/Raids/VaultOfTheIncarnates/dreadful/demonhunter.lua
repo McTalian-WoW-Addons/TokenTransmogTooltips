@@ -5,6 +5,11 @@ local mergeTable = ns.mergeTable
 ---@class VotIDemonhunter
 ns._Gear.VotI["DEMONHUNTER"] = {
 	["RAID_FINDER"] = {
+		["HELM"] = {
+			[75938] = {
+				182568,
+			},
+		},
 		["SHOULDERS"] = {
 			[75939] = {
 				182576,
@@ -27,6 +32,11 @@ ns._Gear.VotI["DEMONHUNTER"] = {
 		},
 	},
 	["NORMAL"] = {
+		["HELM"] = {
+			[75918] = {
+				182567,
+			},
+		},
 		["SHOULDERS"] = {
 			[75919] = {
 				182575,
@@ -49,6 +59,11 @@ ns._Gear.VotI["DEMONHUNTER"] = {
 		},
 	},
 	["HEROIC"] = {
+		["HELM"] = {
+			[75948] = {
+				182569,
+			},
+		},
 		["SHOULDERS"] = {
 			[75949] = {
 				182577,
@@ -71,6 +86,11 @@ ns._Gear.VotI["DEMONHUNTER"] = {
 		},
 	},
 	["MYTHIC"] = {
+		["HELM"] = {
+			[75916] = {
+				182570,
+			},
+		},
 		["SHOULDERS"] = {
 			[75917] = {
 				182578,
@@ -97,24 +117,28 @@ ns._Gear.VotI["DEMONHUNTER"] = {
 -- Combine all demon hunter gear into a single table, only useful for raids that have
 -- tokens that can be turned in for any slot within a difficulty.
 local RAID_FINDER_DEMONHUNTER_GEAR = {}
+mergeTable(RAID_FINDER_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["RAID_FINDER"]["HELM"])
 mergeTable(RAID_FINDER_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["RAID_FINDER"]["CHEST"])
 mergeTable(RAID_FINDER_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["RAID_FINDER"]["GAUNTLETS"])
 mergeTable(RAID_FINDER_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["RAID_FINDER"]["LEGGINGS"])
 mergeTable(RAID_FINDER_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["RAID_FINDER"]["SHOULDERS"])
 
 local NORMAL_DEMONHUNTER_GEAR = {}
+mergeTable(NORMAL_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["NORMAL"]["HELM"])
 mergeTable(NORMAL_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["NORMAL"]["CHEST"])
 mergeTable(NORMAL_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["NORMAL"]["GAUNTLETS"])
 mergeTable(NORMAL_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["NORMAL"]["LEGGINGS"])
 mergeTable(NORMAL_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["NORMAL"]["SHOULDERS"])
 
 local HEROIC_DEMONHUNTER_GEAR = {}
+mergeTable(HEROIC_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["HEROIC"]["HELM"])
 mergeTable(HEROIC_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["HEROIC"]["CHEST"])
 mergeTable(HEROIC_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["HEROIC"]["GAUNTLETS"])
 mergeTable(HEROIC_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["HEROIC"]["LEGGINGS"])
 mergeTable(HEROIC_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["HEROIC"]["SHOULDERS"])
 
 local MYTHIC_DEMONHUNTER_GEAR = {}
+mergeTable(MYTHIC_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["MYTHIC"]["HELM"])
 mergeTable(MYTHIC_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["MYTHIC"]["CHEST"])
 mergeTable(MYTHIC_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["MYTHIC"]["GAUNTLETS"])
 mergeTable(MYTHIC_DEMONHUNTER_GEAR, ns._Gear.VotI["DEMONHUNTER"]["MYTHIC"]["LEGGINGS"])

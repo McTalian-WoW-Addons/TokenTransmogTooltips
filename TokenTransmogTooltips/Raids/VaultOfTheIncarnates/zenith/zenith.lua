@@ -15,6 +15,12 @@ local warrior = gear["WARRIOR"]
 ---@class VotIZenith
 ns._Gear.VotI["ZENITH"] = {
 	["RAID_FINDER"] = {
+		["HELM"] = {
+			["EVOKER"] = evoker["RAID_FINDER"]["HELM"],
+			["MONK"] = monk["RAID_FINDER"]["HELM"],
+			["ROGUE"] = rogue["RAID_FINDER"]["HELM"],
+			["WARRIOR"] = warrior["RAID_FINDER"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["EVOKER"] = evoker["RAID_FINDER"]["SHOULDERS"],
 			["MONK"] = monk["RAID_FINDER"]["SHOULDERS"],
@@ -47,6 +53,12 @@ ns._Gear.VotI["ZENITH"] = {
 		},
 	},
 	["NORMAL"] = {
+		["HELM"] = {
+			["EVOKER"] = evoker["NORMAL"]["HELM"],
+			["MONK"] = monk["NORMAL"]["HELM"],
+			["ROGUE"] = rogue["NORMAL"]["HELM"],
+			["WARRIOR"] = warrior["NORMAL"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["EVOKER"] = evoker["NORMAL"]["SHOULDERS"],
 			["MONK"] = monk["NORMAL"]["SHOULDERS"],
@@ -79,6 +91,12 @@ ns._Gear.VotI["ZENITH"] = {
 		},
 	},
 	["HEROIC"] = {
+		["HELM"] = {
+			["EVOKER"] = evoker["HEROIC"]["HELM"],
+			["MONK"] = monk["HEROIC"]["HELM"],
+			["ROGUE"] = rogue["HEROIC"]["HELM"],
+			["WARRIOR"] = warrior["HEROIC"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["EVOKER"] = evoker["HEROIC"]["SHOULDERS"],
 			["MONK"] = monk["HEROIC"]["SHOULDERS"],
@@ -111,6 +129,12 @@ ns._Gear.VotI["ZENITH"] = {
 		},
 	},
 	["MYTHIC"] = {
+		["HELM"] = {
+			["EVOKER"] = evoker["MYTHIC"]["HELM"],
+			["MONK"] = monk["MYTHIC"]["HELM"],
+			["ROGUE"] = rogue["MYTHIC"]["HELM"],
+			["WARRIOR"] = warrior["MYTHIC"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["EVOKER"] = evoker["MYTHIC"]["SHOULDERS"],
 			["MONK"] = monk["MYTHIC"]["SHOULDERS"],

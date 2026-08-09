@@ -13,6 +13,11 @@ local shaman = gear["SHAMAN"]
 ---@class VotIVenerated
 ns._Gear.VotI["VENERATED"] = {
 	["RAID_FINDER"] = {
+		["HELM"] = {
+			["PALADIN"] = paladin["RAID_FINDER"]["HELM"],
+			["PRIEST"] = priest["RAID_FINDER"]["HELM"],
+			["SHAMAN"] = shaman["RAID_FINDER"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["PALADIN"] = paladin["RAID_FINDER"]["SHOULDERS"],
 			["PRIEST"] = priest["RAID_FINDER"]["SHOULDERS"],
@@ -40,6 +45,11 @@ ns._Gear.VotI["VENERATED"] = {
 		},
 	},
 	["NORMAL"] = {
+		["HELM"] = {
+			["PALADIN"] = paladin["NORMAL"]["HELM"],
+			["PRIEST"] = priest["NORMAL"]["HELM"],
+			["SHAMAN"] = shaman["NORMAL"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["PALADIN"] = paladin["NORMAL"]["SHOULDERS"],
 			["PRIEST"] = priest["NORMAL"]["SHOULDERS"],
@@ -67,6 +77,11 @@ ns._Gear.VotI["VENERATED"] = {
 		},
 	},
 	["HEROIC"] = {
+		["HELM"] = {
+			["PALADIN"] = paladin["HEROIC"]["HELM"],
+			["PRIEST"] = priest["HEROIC"]["HELM"],
+			["SHAMAN"] = shaman["HEROIC"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["PALADIN"] = paladin["HEROIC"]["SHOULDERS"],
 			["PRIEST"] = priest["HEROIC"]["SHOULDERS"],
@@ -94,6 +109,11 @@ ns._Gear.VotI["VENERATED"] = {
 		},
 	},
 	["MYTHIC"] = {
+		["HELM"] = {
+			["PALADIN"] = paladin["MYTHIC"]["HELM"],
+			["PRIEST"] = priest["MYTHIC"]["HELM"],
+			["SHAMAN"] = shaman["MYTHIC"]["HELM"],
+		},
 		["SHOULDERS"] = {
 			["PALADIN"] = paladin["MYTHIC"]["SHOULDERS"],
 			["PRIEST"] = priest["MYTHIC"]["SHOULDERS"],
