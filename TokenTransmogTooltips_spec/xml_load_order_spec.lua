@@ -154,82 +154,72 @@ describe("XML Load Order", function()
 		it("should load _index.lua before any token group or class data (when present)", function()
 			for _, raid in ipairs(raids) do
 				local entries = parseXml(raid.xmlPath)
-				if #entries == 0 then
-					goto continue
-				end
+				if #entries > 0 then
+					-- Find if _index.lua exists in entries
+					local hasIndexLua = false
+					for _, entry in ipairs(entries) do
+						if basename(entry.file) == "_index.lua" then
+							hasIndexLua = true
+							break
+						end
+					end
 
-				-- Find if _index.lua exists in entries
-				local hasIndexLua = false
-				for _, entry in ipairs(entries) do
-					if basename(entry.file) == "_index.lua" then
-						hasIndexLua = true
-						break
+					-- If _index.lua is present, it must be first
+					if hasIndexLua then
+						local first = entries[1]
+						assert.are.equal(
+							"_index.lua",
+							basename(first.file),
+							raid.name .. "/_index.xml: _index.lua must be first entry, got " .. tostring(first.file)
+						)
 					end
 				end
-
-				-- If _index.lua is present, it must be first
-				if hasIndexLua then
-					local first = entries[1]
-					assert.are.equal(
-						"_index.lua",
-						basename(first.file),
-						raid.name .. "/_index.xml: _index.lua must be first entry, got " .. tostring(first.file)
-					)
-				end
-
-				::continue::
 			end
 		end)
 
 		it("should load tokens.lua last", function()
 			for _, raid in ipairs(raids) do
 				local entries = parseXml(raid.xmlPath)
-				if #entries == 0 then
-					goto continue
-				end
+				if #entries > 0 then
+					-- Find if tokens.lua exists in entries
+					local hasTokensLua = false
+					for _, entry in ipairs(entries) do
+						if basename(entry.file) == "tokens.lua" then
+							hasTokensLua = true
+							break
+						end
+					end
 
-				-- Find if tokens.lua exists in entries
-				local hasTokensLua = false
-				for _, entry in ipairs(entries) do
-					if basename(entry.file) == "tokens.lua" then
-						hasTokensLua = true
-						break
+					-- If tokens.lua is present, it must be last
+					if hasTokensLua then
+						local last = entries[#entries]
+						assert.are.equal(
+							"tokens.lua",
+							basename(last.file),
+							raid.name .. "/_index.xml: tokens.lua must be last entry, got " .. tostring(last.file)
+						)
 					end
 				end
-
-				-- If tokens.lua is present, it must be last
-				if hasTokensLua then
-					local last = entries[#entries]
-					assert.are.equal(
-						"tokens.lua",
-						basename(last.file),
-						raid.name .. "/_index.xml: tokens.lua must be last entry, got " .. tostring(last.file)
-					)
-				end
-
-				::continue::
 			end
 		end)
 
 		it("should only use forward slashes in file paths", function()
 			for _, raid in ipairs(raids) do
 				local raw = io.open(raid.xmlPath, "r")
-				if not raw then
-					goto continue
-				end
-				local lineNum = 0
-				for line in raw:lines() do
-					lineNum = lineNum + 1
-					local filePath = line:match('file="([^"]+)"')
-					if filePath then
-						assert(
-							not filePath:find("\\"),
-							raid.name .. "/_index.xml line " .. lineNum .. ": path contains backslash: " .. filePath
-						)
+				if raw then
+					local lineNum = 0
+					for line in raw:lines() do
+						lineNum = lineNum + 1
+						local filePath = line:match('file="([^"]+)"')
+						if filePath then
+							assert(
+								not filePath:find("\\"),
+								raid.name .. "/_index.xml line " .. lineNum .. ": path contains backslash: " .. filePath
+							)
+						end
 					end
+					raw:close()
 				end
-				raw:close()
-				::continue::
 			end
 		end)
 	end)
@@ -255,27 +245,23 @@ describe("XML Load Order", function()
 		it("should load the aggregator file last (defined after all class files)", function()
 			for _, group in ipairs(allGroups) do
 				local entries = parseXml(group.xmlPath)
-				if #entries == 0 then
-					goto continue
+				if #entries > 0 then
+					-- The aggregator should be the last entry and match the directory name
+					local last = entries[#entries]
+					local lastBasename = basename(last.file):gsub("%.lua$", "")
+					assert.are.equal(
+						group.groupName,
+						lastBasename,
+						group.raidName
+							.. "/"
+							.. group.groupName
+							.. "/_index.xml: "
+							.. "last entry should be aggregator "
+							.. group.groupName
+							.. ".lua, got "
+							.. tostring(last.file)
+					)
 				end
-
-				-- The aggregator should be the last entry and match the directory name
-				local last = entries[#entries]
-				local lastBasename = basename(last.file):gsub("%.lua$", "")
-				assert.are.equal(
-					group.groupName,
-					lastBasename,
-					group.raidName
-						.. "/"
-						.. group.groupName
-						.. "/_index.xml: "
-						.. "last entry should be aggregator "
-						.. group.groupName
-						.. ".lua, got "
-						.. tostring(last.file)
-				)
-
-				::continue::
 			end
 		end)
 
@@ -299,28 +285,26 @@ describe("XML Load Order", function()
 		it("should only use forward slashes in file paths", function()
 			for _, group in ipairs(allGroups) do
 				local raw = io.open(group.xmlPath, "r")
-				if not raw then
-					goto continue
-				end
-				local lineNum = 0
-				for line in raw:lines() do
-					lineNum = lineNum + 1
-					local filePath = line:match('file="([^"]+)"')
-					if filePath then
-						assert(
-							not filePath:find("\\"),
-							group.raidName
-								.. "/"
-								.. group.groupName
-								.. "/_index.xml line "
-								.. lineNum
-								.. ": path contains backslash: "
-								.. filePath
-						)
+				if raw then
+					local lineNum = 0
+					for line in raw:lines() do
+						lineNum = lineNum + 1
+						local filePath = line:match('file="([^"]+)"')
+						if filePath then
+							assert(
+								not filePath:find("\\"),
+								group.raidName
+									.. "/"
+									.. group.groupName
+									.. "/_index.xml line "
+									.. lineNum
+									.. ": path contains backslash: "
+									.. filePath
+							)
+						end
 					end
+					raw:close()
 				end
-				raw:close()
-				::continue::
 			end
 		end)
 	end)
