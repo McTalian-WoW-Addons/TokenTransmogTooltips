@@ -1,4 +1,4 @@
-.PHONY: build watch test test-cov test-only test-file test-pattern test-ci lua_deps help
+.PHONY: build watch boot_sim test test-cov test-only test-file test-pattern test-ci lua_deps help
 
 # Variables
 ROCKSBIN := $(HOME)/.luarocks/bin
@@ -18,12 +18,21 @@ help:
 	@echo "                        Example: make test-pattern PATTERN=\"modID\""
 	@echo "  test-ci             - Run tests for CI (TAP output)"
 	@echo "  lua_deps            - Install Lua dependencies"
+	@echo "  boot_sim            - Simulate a client login to catch Lua load errors"
 
 build:
 	@wow-build-tools build -d -t TokenTransmogTooltips -r ./.release
 
 watch:
 	@wow-build-tools build watch -t TokenTransmogTooltips -r ./.release
+
+# Simulate a client login to catch Lua load errors before a player does.
+# No Libs/ externals here, so no build step is needed first. Unlike most
+# other addons in this workspace, TokenTransmogTooltips_spec/_mocks/helper.lua
+# has no busted-specific dependencies, so it works as --mocks directly --
+# higher fidelity than the built-in mocks alone.
+boot_sim:
+	@wow-build-tools boot-sim -t TokenTransmogTooltips -m $(SPEC_DIR)/_mocks/helper.lua --no-splash
 
 test:
 	@$(ROCKSBIN)/busted $(SPEC_DIR)
