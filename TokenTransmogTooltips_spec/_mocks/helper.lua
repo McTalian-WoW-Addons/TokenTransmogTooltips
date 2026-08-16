@@ -34,3 +34,7 @@ _G.Enum.ItemCreationContext = _G.Enum.ItemCreationContext
 		RaidHeroicExtended_3 = 28,
 		RaidMythicExtended_3 = 29,
 	}
+
+-- Enum.TooltipDataType.Item, read by TTT:Initialize() to register the
+-- OnTooltipSetItem post-call hook.
+_G.Enum.TooltipDataType = _G.Enum.TooltipDataType or { Item = 0 }
