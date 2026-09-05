@@ -5,3 +5,6 @@ luacov.stats.out
 luacov.report.out
 
 __pycache__/
+
+.claude/worktrees/
+.claude/.last-checks.json
